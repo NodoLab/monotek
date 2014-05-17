@@ -48,6 +48,10 @@ small, .small { display: block; font-size: 13px; line-height: 1.4; margin-bottom
 
 hr, .hr { border: 0; border-top: 1px solid #d7d7d7; }
 
+blockquote, .blockquote { padding: 12px 0 12px 25px; border-left: 7px solid #ffe400; margin-bottom: 10px; }
+blockquote p, .blockquote p { font-weight: normal; font-size: 18px; line-height: 1.231; margin-bottom: 10px; }
+blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
+
 body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color: #333333; line-height: 1.35; background-color: white; }
 
 .out { width: 375px; margin: auto; }
