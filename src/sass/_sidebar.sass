@@ -7,6 +7,48 @@
 		+s(i-monotek)
 		&.sidebar__monotek_mod
 			+s(i-monotek_mod)
+	.sidebar__row
+		padding: 19px 0
+		border-top: 1px solid $gray-light
+		color: #000
+		&:first-child
+			border-top-color: transparent 
+	.sidebar__rowlabel
+		padding: 0 5px
+	.sidebar__rowdescr
+		margin-bottom: 7px
+		line-height: 1
+		
+// telephone
+// --------------------------------------------------
+.telephone
+	padding: 0 7px
+	line-height: 1
+	&.telephone_sidebar
+		padding: 8px 7px
+		.telephone__num
+			margin-top: 3px
+	.telephone__num
+		font-size: 24px
+		letter-spacing: 0.02em
+		font-family: $font-bold
+		color: #000
+		text-decoration: none
+		&:before
+			content: ""
+			margin-right: 7px
+			margin-left: 3px
+			display: inline-block
+			vertical-align: middle
+			+s(i-tel)
+		a
+			font-size: 24px
+			font-family: $font-bold
+			color: #000
+			text-decoration: none
+
+// nav
+// --------------------------------------------------		
 .nav
 	ul
 		+border-radius($radius)

@@ -40,7 +40,7 @@ p { margin-bottom: 10px; }
 
 .lead { font-weight: normal; font-size: 18px; line-height: 1.231; margin-bottom: 10px; }
 
-b, strong { font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; }
+b, strong { font-size: 18px; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; }
 
 small, .small { display: block; font-size: 13px; line-height: 1.4; margin-bottom: 10px; }
 
@@ -52,14 +52,29 @@ blockquote, .blockquote { padding: 10px 0 10px 25px; border-left: 7px solid #ffe
 blockquote p, .blockquote p { font-weight: normal; font-size: 18px; line-height: 1.231; margin-bottom: 10px; }
 blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
 
+.btn { padding-right: 31px; padding-left: 18px; padding-top: 5px; padding-bottom: 5px; background: #ffe400; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: inline-block; font-size: 16px; text-transform: uppercase; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; color: black; text-decoration: none; position: relative; }
+.btn:after { content: ""; position: absolute; top: 11px; right: 16px; background: url('../img/icons-s856b9111f9.png') 0 -612px no-repeat; width: 4px; height: 8px; }
+.btn.btn_map { padding-left: 35px; padding-right: 25px; }
+.btn.btn_map:after { background: url('../img/icons-s856b9111f9.png') 0 -490px no-repeat; width: 11px; height: 16px; left: 15px; right: auto; top: 7px; }
+.btn.btn_call { padding-left: 35px; padding-right: 22px; }
+.btn.btn_call:after { background: url('../img/icons-s856b9111f9.png') 0 -545px no-repeat; width: 11px; height: 13px; left: 16px; right: auto; top: 9px; }
+.btn.btn_forus { margin-top: 8px; }
+.btn.btn_calc { padding-left: 18px; padding-right: 57px; }
+.btn.btn_calc:after { right: 32px; }
+
 .wrap { width: 960px; margin-left: auto; margin-right: auto; }
 
 .layout { width: 960px; margin-left: auto; margin-right: auto; *zoom: 1; }
 .layout:after { content: " "; display: table; clear: both; }
 .layout .layout-sidebar { width: 250px; float: left; margin-right: 40px; }
 .layout .layout-sidebar.layout-sidebar_right { float: right; margin-right: 0; margin-left: 40px; }
-.layout .layout-sidebar.layout-sidebar_index { position: relative; top: -428px; }
+.layout .layout-sidebar.layout-sidebar_index { margin-top: -428px; }
 .layout .layout-page { width: 670px; float: left; }
+
+.page { padding-top: 30px; *zoom: 1; }
+.page:after { content: " "; display: table; clear: both; }
+.page .page__content { width: 390px; float: left; }
+.page .page__aside { width: 252px; float: right; }
 
 body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color: #333333; line-height: 1.35; background-color: white; }
 
@@ -133,7 +148,23 @@ body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; fo
 
 .sidebar .sidebar__monotek { margin-bottom: 10px; display: block; background: url('../img/icons-s856b9111f9.png') 0 0 no-repeat; width: 250px; height: 130px; }
 .sidebar .sidebar__monotek.sidebar__monotek_mod { background: url('../img/icons-s856b9111f9.png') 0 -140px no-repeat; width: 250px; height: 172px; }
+.sidebar .sidebar__row { padding: 19px 0; border-top: 1px solid #d2d2d2; color: black; }
+.sidebar .sidebar__row:first-child { border-top-color: transparent; }
+.sidebar .sidebar__rowlabel { padding: 0 5px; }
+.sidebar .sidebar__rowdescr { margin-bottom: 7px; line-height: 1; }
+
+.telephone { padding: 0 7px; line-height: 1; }
+.telephone.telephone_sidebar { padding: 8px 7px; }
+.telephone.telephone_sidebar .telephone__num { margin-top: 3px; }
+.telephone .telephone__num { font-size: 24px; letter-spacing: 0.02em; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; color: black; text-decoration: none; }
+.telephone .telephone__num:before { content: ""; margin-right: 7px; margin-left: 3px; display: inline-block; vertical-align: middle; background: url('../img/icons-s856b9111f9.png') 0 -516px no-repeat; width: 17px; height: 19px; }
+.telephone .telephone__num a { font-size: 24px; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; color: black; text-decoration: none; }
 
 .nav ul { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; overflow: hidden; }
 .nav li:first-child a { padding: 9px 26px; border-top-color: transparent; }
 .nav a { padding: 7px 26px; display: block; border-top: 1px solid #fdff54; font-size: 20px; background: #ffe400; color: black; text-decoration: none; }
+
+.calculator { padding: 10px 20px 20px; border: 1px solid #b1b1b1; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background-color: white; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #f9f9f9)); background-image: -webkit-linear-gradient(#eeeeee, #f9f9f9); background-image: -moz-linear-gradient(#eeeeee, #f9f9f9); background-image: -o-linear-gradient(#eeeeee, #f9f9f9); background-image: linear-gradient(#eeeeee, #f9f9f9); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07); }
+.calculator.calculator_index { margin-top: -78px; }
+.calculator .calculator__meta { margin-bottom: 12px; font-size: 18px; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; text-transform: uppercase; color: black; }
+.calculator .calculator__input { width: 188px; margin-bottom: 10px; }
