@@ -71,6 +71,30 @@ body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; fo
 .input.input_small::-webkit-input-placeholder { font-size: 13px; }
 .input.input_small::placeholder { font-size: 13px; }
 
+.select { position: relative; font-size: 14px; color: #333333; }
+.select.select_small .select__value { padding: 3px 10px; }
+.select.select_small .select__value:after { top: 11px; }
+.select.is-open .select__drop { display: block; }
+.select.is-open .select__value { background: #faf9f9; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(#eeeeee, #ffffff); background-image: -moz-linear-gradient(#eeeeee, #ffffff); background-image: -o-linear-gradient(#eeeeee, #ffffff); background-image: linear-gradient(#eeeeee, #ffffff); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); color: #797979; }
+.select .select__drop { display: none; width: 100%; max-height: 200px; -ms-overflow-y: auto; overflow-y: auto; position: absolute; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); top: 100%; left: 0; z-index: 666; }
+.select em { font-style: normal; color: #797979; }
+.select em.is-active { color: #333333; }
+.select .select__value { padding: 7px 10px; display: block; border: 1px solid #a1a1a1; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); background: #f6f6f6; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee)); background-image: -webkit-linear-gradient(#ffffff, #eeeeee); background-image: -moz-linear-gradient(#ffffff, #eeeeee); background-image: -o-linear-gradient(#ffffff, #eeeeee); background-image: linear-gradient(#ffffff, #eeeeee); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; color: #333333; }
+.select .select__value:after { content: ""; background: url('../img/icons-sd895f71622.png') 0 -28px no-repeat; width: 10px; height: 6px; position: absolute; top: 15px; right: 10px; }
+.select ul { margin-top: 2px; }
+.select ul li { padding: 5px 10px; background: white; border: 1px solid #a1a1a1; cursor: pointer; font-size: 13px; color: #333333; position: relative; }
+.select ul li:after { content: ""; height: 1px; background: white; position: absolute; top: -1px; left: 0; right: 0; }
+.select ul li:first-child { padding: 4px 10px; border-top-color: #a1a1a1; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; }
+.select ul li:first-child:after { content: none; }
+.select ul li:last-child { -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; -ms-border-radius: 0px 0px 3px 3px; -o-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; }
+
+.textarea { min-height: 70px; padding: 9px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; resize: vertical; font-size: 13px; font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #333333; }
+.textarea:-ms-input-placeholder { color: #797979; }
+.textarea:-moz-placeholder { color: #797979; }
+.textarea::-moz-placeholder { color: #797979; }
+.textarea::-webkit-input-placeholder { color: #797979; }
+.textarea::placeholder { color: #797979; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
