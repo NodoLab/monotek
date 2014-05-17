@@ -109,6 +109,17 @@ body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; fo
 .radio input + span .radio__ico { position: absolute; top: 0px; left: 0px; background: url('../img/icons-s70f2a59f9c.png') 0 -56px no-repeat; width: 18px; height: 18px; }
 .radio input:checked + span .radio__ico { background-position: 0 -28px; }
 
+.tab.tab_small .tab__link { padding: 3px 10px; border-color: transparent; }
+.tab.tab_small .tab-cont { border-left-color: transparent; border-right-color: transparent; border-bottom-color: transparent; }
+.tab .tab__nav { *zoom: 1; }
+.tab .tab__nav:after { content: " "; display: table; clear: both; }
+.tab .tab__nav li { margin-left: 1px; float: left; }
+.tab .tab__nav li:first-child { margin-left: 0; }
+.tab .tab__nav li.is-active .tab__link { border: 1px solid #a1a1a1; border-bottom-width: 0; position: relative; }
+.tab .tab__nav li.is-active .tab__link:after { content: ""; height: 1px; position: absolute; bottom: -1px; left: 0; right: 0; background: white; }
+.tab .tab__link { padding: 7px 18px; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; border: 1px solid #ececec; border-bottom-width: 0; display: block; font-size: 15px; text-transform: uppercase; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; color: black; text-decoration: none; }
+.tab .tab-cont { padding: 18px 20px; border: 1px solid #a1a1a1; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
