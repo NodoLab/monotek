@@ -1,0 +1,101 @@
+// Fonts
+// --------------------------------------------------
++font("Neuron", "neuron")
++font("Neuron Bold", "neuron-bold")
+
+$font-n: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif
+$font-nb: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif
+$font-base: $font-n
+$font-bold: $font-nb
+
+// Colors
+// --------------------------------------------------
+$yellow: #ffe400
+$black: #000
+$gray: #a1a1a1
+$gray-dark: #333
+$gray-light: #d2d2d2
+
+//	Global text color on `<body>`.
+$color-base: $gray-dark
+//	Background color for `<body>`.
+$bg-base: #fff
+
+// Typography
+// --------------------------------------------------
+$size-l: 18px
+$size-m: 15px
+$size-s: 13px
+$size-xs: 12px
+$size-base: $size-m
+
+// Headings
+// --------------------------------------------------
+$size-h1: 32px
+$size-h2: 28px
+$size-h3: 24px
+$size-h6: 18px
+
+$h-font: $font-bold
+$h-font-alt: $font-base
+$h-font-weight: normal
+$h-color: $black
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h6, .h6
+	font-weight: $h-font-weight
+	color: $h-color
+
+h1, .h1,
+h2, .h2,
+h3, .h3
+	font-family: $h-font
+	line-height: 1
+
+h2, .h2,
+h3, .h3,
+h6, .h6
+	margin-bottom: 18px
+
+h1, .h1
+	font-size: $size-h1
+	margin-bottom: 20px
+h2, .h2
+	font-size: $size-h2
+h3, .h3
+	font-size: $size-h3
+h6, .h6
+	font-family: $h-font-alt
+	font-size: $size-h6
+	line-height: 1.231
+
+// b, strong
+.lead
+	font-weight: normal
+	font-size: $size-l
+	line-height: 1.231
+	margin-bottom: 10px
+
+$hr-border: #d7d7d7
+hr, .hr
+	// margin-top:    $line-height-computed
+	// margin-bottom: $line-height-computed
+	border: 0
+	border-top: 1px solid $hr-border
+
+p
+	margin-bottom: 10px
+
+// Buttons
+// --------------------------------------------------
+
+// Grid
+// --------------------------------------------------
+
+// Form fields
+// --------------------------------------------------
+
+// Tab container
+// --------------------------------------------------
