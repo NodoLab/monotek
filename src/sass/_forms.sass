@@ -3,8 +3,10 @@
 $radius: 3px
 $shadow: inset 0 1px 4px rgba(0,0,0,.3)
 $shadow-light: 0 1px 0 rgba(0,0,0,.1)
+
 .row
 	margin-bottom: 12px
+
 // input
 // --------------------------------------------------
 .input
@@ -121,11 +123,64 @@ $shadow-light: 0 1px 0 rgba(0,0,0,.1)
 	color: $gray-dark
 	+placeholder
 		color: #797979
+
 // checkbox
 // --------------------------------------------------
-
+.checkbox
+	position: relative
+	cursor: pointer
+	&:hover
+		input + span
+			.checkbox__ico
+				+sp(i-checkbox_h)
+	span
+		padding-left: 27px
+		font-size: 14px
+		font-family: $font-n
+		color: $gray-dark
+	input
+		+opacity(0)
+		position: absolute
+		left: 0
+		top: 0
+	input + span
+		.checkbox__ico
+			position: absolute
+			top: 0px
+			left: 0px
+			+s(i-checkbox)
+	input:checked + span 
+		.checkbox__ico
+			+sp(i-checkbox_a)
+ 
 // radio
 // --------------------------------------------------
+.radio
+	position: relative
+	cursor: pointer
+	&:hover
+		input + span
+			.radio__ico
+				+sp(i-radio_h)
+	span
+		padding-left: 27px
+		font-size: 14px
+		font-family: $font-n
+		color: $gray-dark
+	input
+		+opacity(0)
+		position: absolute
+		left: 0
+		top: 0
+	input + span
+		.radio__ico
+			position: absolute
+			top: 0px
+			left: 0px
+			+s(i-radio)
+	input:checked + span 
+		.radio__ico
+			+sp(i-radio_a)
 
 // tab
 // --------------------------------------------------
