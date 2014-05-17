@@ -8,11 +8,22 @@
 </head>
 <body>
 
-	include "header_index"
-	include "sidebar_index"
+	<div class="header header_index"></div>
+
 	 <div class="out">
-	 	<p>index.page</p>
-	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, et, enim veniam consectetur nesciunt dolor vel id provident quisquam harum voluptatum dignissimos quibusdam. Deserunt, vel, tenetur sequi sunt quia voluptate?</p>
+	 	<div class="index">
+	 		<div class="index-i wrap">
+	 			<div class="layout">
+	 				<div class="layout-sidebar layout-sidebar_index">
+	 					include "sidebar_index"
+	 				</div>
+	 				<div class="layout-page">
+	 					page
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 	<div class="push"></div>
 	 </div>
 	<!-- /.out -->
 	include "footer"

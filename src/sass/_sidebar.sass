@@ -1,0 +1,26 @@
+// sidebar
+// --------------------------------------------------
+.sidebar
+	.sidebar__monotek
+		margin-bottom: 10px
+		display: block
+		+s(i-monotek)
+		&.sidebar__monotek_mod
+			+s(i-monotek_mod)
+.nav
+	ul
+		+border-radius($radius)
+		overflow: hidden
+	li
+		&:first-child
+			a
+				padding: 9px 26px
+				border-top-color: transparent 
+	a
+		padding: 7px 26px
+		display: block
+		border-top: 1px solid #fdff54 
+		font-size: 20px
+		background: $yellow
+		color: #000
+		text-decoration: none
