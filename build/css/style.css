@@ -54,7 +54,7 @@ blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
 
 body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color: #333333; line-height: 1.35; background-color: white; }
 
-.out { width: 375px; margin: auto; }
+.elements { width: 375px; margin: auto; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
