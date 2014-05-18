@@ -1,24 +1,102 @@
 // 
 // --------------------------------------------------
-
+.title
+	font-size: $size-title
+	font-family: $font-bold 
+	text-transform: uppercase
+	color: #000 
 // calcwidget
 // --------------------------------------------------
-.calcwidget
+.calcwdg
 	padding: 10px 20px 20px
 	margin-left: -2px
+	margin-bottom: 21px
 	border: 1px solid #b1b1b1
 	@include border-radius(4px)
 	background-color: #fff
 	+g(#eee,#f9f9f9)
 	@include box-shadow(0 5px 10px rgba(0,0,0,.07))
-	&.calcwidget_index
+	&.calcwdg_index
 		margin-top: -78px
-	.calcwidget__meta
+	.calcwdg__meta
 		margin-bottom: 12px
 		font-size: $size-l
 		font-family: $font-bold 
 		text-transform: uppercase 
 		color: #000
-	.calcwidget__input
+	.calcwdg__input
 		width: 188px
 		margin-bottom: 10px
+
+// tab
+// --------------------------------------------------
+.tab
+	&.tab_small
+		.tab__link
+			padding: 3px 9px
+			font-size: $size-s
+			border-color: transparent
+		.tab__item
+			padding: 18px 0
+			border-left-color: transparent
+			border-right-color: transparent
+			border-bottom-color: transparent
+	.tab__nav
+		+clr
+		li
+			margin-left: 1px
+			float: left
+			&:first-child
+				margin-left: 0
+			&.is-active
+				.tab__link
+					border: 1px solid $gray
+					border-bottom-width: 0
+					position: relative
+					color: #000 
+					&:after
+						content: ""
+						height: 1px
+						position: absolute
+						bottom: -1px
+						left: 0
+						right: 0
+						background: #fff 
+	.tab__link
+		padding: 7px 18px
+		+border-radius(3px 3px 0 0)
+		border: 1px solid #ececec
+		border-bottom-width: 0
+		display: block
+		font-size: $size-m 
+		text-transform: uppercase
+		font-family: $font-bold
+		color: $gray
+		text-decoration: none
+		&:hover
+			color: $gray-dark 
+	.tab__item
+		padding: 18px 20px
+		border: 1px solid $gray
+
+// gallerywdg
+// --------------------------------------------------
+.gallerywdg
+	.gallerywdg__title
+		margin-bottom: 13px
+	.gallerywdg__content
+	.gallerywdg__items
+		margin-left: -10px
+		.tab__item &
+			padding: 0
+	.gallerywdg__item
+		width: 77px
+		height: 77px
+		line-height: 77px
+		margin-left: 9px
+		float: left
+		overflow: hidden
+		text-align: center
+		img
+			display: block
+			// max-width: 100%
