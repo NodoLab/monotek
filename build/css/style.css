@@ -66,17 +66,12 @@ blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
 
 .wrap { width: 960px; margin-left: auto; margin-right: auto; }
 
-.layout { width: 960px; margin-left: auto; margin-right: auto; *zoom: 1; }
-.layout:after { content: " "; display: table; clear: both; }
-.layout .layout-sidebar { width: 250px; float: left; margin-right: 40px; }
-.layout .layout-sidebar.layout-sidebar_right { float: right; margin-right: 0; margin-left: 40px; }
-.layout .layout-sidebar.layout-sidebar_index { margin-top: -428px; }
-.layout .layout-page { width: 670px; float: left; }
-
-.page { padding-top: 30px; *zoom: 1; }
-.page:after { content: " "; display: table; clear: both; }
-.page .page__content { width: 390px; float: left; }
-.page .page__aside { width: 252px; float: right; }
+.l { *zoom: 1; }
+.l:after { content: " "; display: table; clear: both; }
+.l .l-sidebar { width: 250px; float: left; margin-right: 40px; }
+.l .l-main { width: 670px; float: left; margin-top: 30px; }
+.l .l-col1 { width: 390px; float: left; }
+.l .l-col2 { width: 252px; float: right; }
 
 body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color: #333333; line-height: 1.35; background-color: white; }
 
@@ -148,6 +143,7 @@ body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; fo
 
 .header.header_index { height: 428px; overflow: hidden; background-image: url(../img/header_index.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
+.sidebar.sidebar_index { margin-top: -428px; }
 .sidebar .sidebar__monotek { margin-bottom: 10px; display: block; background: url('../img/icons-s856b9111f9.png') 0 0 no-repeat; width: 250px; height: 130px; }
 .sidebar .sidebar__monotek.sidebar__monotek_mod { background: url('../img/icons-s856b9111f9.png') 0 -140px no-repeat; width: 250px; height: 172px; }
 .sidebar .sidebar__row { padding: 19px 0; border-top: 1px solid #d2d2d2; color: black; }

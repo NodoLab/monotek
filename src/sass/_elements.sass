@@ -191,34 +191,25 @@ $mr-small: 20px
 	margin-left: auto
 	margin-right: auto
 
-.layout
-	width: 960px
-	margin-left: auto
-	margin-right: auto
+.l
 	+clr
-	.layout-sidebar
+	.l-sidebar
 		width: 250px
 		float: left
 		margin-right: $mr-base
-		&.layout-sidebar_right
-			float: right
-			margin-right: 0
-			margin-left: $mr-base
-		&.layout-sidebar_index
-			margin-top: -428px
-	.layout-page
+	.l-main
 		width: 670px
 		float: left
-
-.page
-	padding-top: 30px
-	+clr
-	.page__content
+		margin-top: 30px
+	.l-col1
 		width: 390px
 		float: left
-	.page__aside
+	.l-col2
 		width: 252px
 		float: right
+
+.entry
+
 
 // Tab container
 // --------------------------------------------------
