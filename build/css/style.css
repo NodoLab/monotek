@@ -62,6 +62,8 @@ blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
 .btn.btn_calc { padding-left: 18px; padding-right: 57px; }
 .btn.btn_calc:after { right: 32px; }
 
+.container { width: 960px; margin-left: auto; margin-right: auto; }
+
 .wrap { width: 960px; margin-left: auto; margin-right: auto; }
 
 .layout { width: 960px; margin-left: auto; margin-right: auto; *zoom: 1; }
