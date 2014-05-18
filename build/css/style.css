@@ -40,7 +40,7 @@ p { margin-bottom: 10px; }
 
 .lead { font-weight: normal; font-size: 18px; line-height: 1.231; margin-bottom: 10px; }
 
-b, strong { font-size: 18px; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; }
+b, strong { font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; }
 
 small, .small { display: block; font-size: 13px; line-height: 1.4; margin-bottom: 10px; }
 
