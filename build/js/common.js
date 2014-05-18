@@ -1,6 +1,11 @@
 head.ready(function() {
 	console.log("These aren't the droids you're looking for!");
 
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails"
+	});
+
 	// select
 	function select() {
 		var el = $('.js-select');

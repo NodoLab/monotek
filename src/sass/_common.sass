@@ -10,11 +10,40 @@ body
 	line-height: 1.35
 	background-color: $bg-base
 
+
+
+table,
+.table
+	font-family: $font-base
+	font-size: $size-m
+	line-height: 1.35
+	color: $color-base
+	text-align: left
+	th, td
+		border: 1px solid #d1d1d1
+		border-width: 1px 0
+		padding: 9px 10px 8px
+	th
+		font-family: $font-bold
+		font-weight: normal
+		border-width: 1px 0 0
+
+p + table
+	margin-top: 25px
+
 //
 // --------------------------------------------------
 .elements
 	width: 375px
 	margin: auto
+
+.page
+	margin-bottom: 50px
+
+.page-title
+	+clr
+	.page-title__back
+		float: right
 
 // Breadcrumbs
 // --------------------------------------------------
@@ -54,11 +83,12 @@ body
 	.gallery__list
 		+clr
 		margin-left: -20px
+		margin-top: -25px
 	.gallery__item
 		float: left
 		width: 210px
 		margin-left: 20px
-		margin-bottom: 25px
+		margin-top: 25px
 		> a
 			display: block
 			color: inherit
