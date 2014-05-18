@@ -143,7 +143,7 @@
             e.preventDefault();
             var $slide = $(this),
                 target = $slide.index();
-            if (!$(vars.asNavFor).data('flexslider').animating && !$slide.hasClass('active')) {
+            if (!$(vars.asNavFor).data('flexslider').animating && !$slide.hasClass('is-active')) {
               slider.direction = (slider.currentItem < target) ? "next" : "prev";
               slider.flexAnimate(target, vars.pauseOnAction, false, true, true);
             }
@@ -184,7 +184,7 @@
             var $this = $(this),
                 target = slider.controlNav.index($this);
 
-            if (!$this.hasClass(namespace + 'active')) {
+            if (!$this.hasClass('is-active')) {
               slider.direction = (target > slider.currentSlide) ? "next" : "prev";
               slider.flexAnimate(target, vars.pauseOnAction);
             }
@@ -205,7 +205,7 @@
             var $this = $(this),
                 target = slider.controlNav.index($this);
                 
-            if (!$this.hasClass(namespace + 'active')) {
+            if (!$this.hasClass('is-active')) {
               (target > slider.currentSlide) ? slider.direction = "next" : slider.direction = "prev";
               slider.flexAnimate(target, vars.pauseOnAction);
             }
@@ -222,7 +222,7 @@
           slider.controlNav = $('.' + namespace + 'control-nav li ' + selector, (slider.controlsContainer) ? slider.controlsContainer : slider);
         },
         active: function() {
-          slider.controlNav.removeClass(namespace + "active").eq(slider.animatingTo).addClass(namespace + "active");
+          slider.controlNav.removeClass("is-active").eq(slider.animatingTo).addClass("is-active");
         },
         update: function(action, pos) {
           if (slider.pagingCount > 1 && action === "add") {
@@ -611,7 +611,7 @@
         var sliderOffset, arr;
             
         if (type === "init") {
-          slider.viewport = $('<div class="flex-viewport"></div>').css({"overflow": "hidden", "position": "relative"}).appendTo(slider).append(slider.container);
+          slider.viewport = $('<div class="flexslider__viewport"></div>').css({"overflow": "hidden", "position": "relative"}).appendTo(slider).append(slider.container);
           // INFINITE LOOP:
           slider.cloneCount = 0;
           slider.cloneOffset = 0;

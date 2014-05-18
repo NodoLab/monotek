@@ -44,6 +44,11 @@
               dest: "build/fonts/"
             }, {
               expand: true,
+              cwd: "src/features/*",
+              src: "*",
+              dest: "build/features/*"
+            }, {
+              expand: true,
               cwd: "src/js/",
               src: ["**"],
               dest: "build/js/"
