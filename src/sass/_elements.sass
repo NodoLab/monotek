@@ -17,6 +17,9 @@ $radius: 3px
 $shadow: inset 0 1px 4px rgba(0,0,0,.3)
 $shadow-light: 0 1px 0 rgba(0,0,0,.1)
 
+$mr-base: 40px
+$mr-sm: 20px
+
 // Colors
 // --------------------------------------------------
 $yellow: #ffe400
@@ -175,10 +178,6 @@ blockquote,
 
 // Grid
 // --------------------------------------------------
-$mr-base: 40px
-$mr-small: 20px
-
-
 %in
 	width: 960px
 	margin-left: auto
@@ -202,11 +201,12 @@ $mr-small: 20px
 		float: left
 		margin-top: 30px
 	.l-col1
-		width: 390px
+		width: 380px
 		float: left
 	.l-col2
-		width: 252px
-		float: right
+		width: 250px
+		margin-left: $mr-base
+		float: left
 
 .entry
 
