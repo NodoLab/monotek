@@ -3,7 +3,11 @@ head.ready(function() {
 
 	$('.flexslider').flexslider({
 		animation: "slide",
-		controlNav: "thumbnails"
+		controlNav: "thumbnails",
+		manualControls: "flexslider__control-thumbs",
+		directionNav: false,
+		namespace: "flexslider__",
+		selector: ".flexslider__slides > li",
 	});
 
 	// select

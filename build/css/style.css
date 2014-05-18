@@ -105,6 +105,13 @@ p + table { margin-top: 25px; }
 .gallery .gallery__pic img { display: block; }
 .gallery .gallery__desc { font-size: 12px; }
 
+.flexslider .flexslider__slides > li { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; overflow: hidden; }
+.flexslider .flexslider__slides a, .flexslider .flexslider__slides img { display: block; }
+.flexslider .flexslider__control-thumbs { *zoom: 1; margin-left: -20px; }
+.flexslider .flexslider__control-thumbs:after { content: " "; display: table; clear: both; }
+.flexslider .flexslider__control-thumbs > li { float: left; width: 66px; height: 66px; margin-left: 20px; margin-top: 20px; overflow: hidden; cursor: pointer; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.flexslider .flexslider__control-thumbs > li img { display: block; }
+
 .row { margin-bottom: 12px; }
 
 .input { height: 24px; padding: 4px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3); box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3); border: 1px solid #a1a1a1; font-size: 14px; font-family: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif; }
