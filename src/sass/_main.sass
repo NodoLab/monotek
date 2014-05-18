@@ -90,13 +90,9 @@
 		.tab__item &
 			padding: 0
 	.gallerywdg__item
-		width: 77px
-		height: 77px
-		line-height: 77px
 		margin-left: 9px 
 		margin-bottom: 10px
 		float: left
-		overflow: hidden
 		text-align: center
 		background-color: #ffe300
 		@include border-radius(2px)
@@ -104,7 +100,18 @@
 		position: relative
 		&:after
 			content: ""
-			
+			+s(shadow)
+			position: absolute
+			left: 0
+			bottom: -15px
+			z-index: 100
+		.gallerywdg__itemimg
+			width: 77px
+			height: 77px
+			line-height: 77px
+			overflow: hidden
+		a
+			display: block
 		img
 			display: block
 			// max-width: 100%
