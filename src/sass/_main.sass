@@ -160,15 +160,17 @@
 // special
 // --------------------------------------------------
 .special
+	margin-bottom: $mr-sm
+	+border-radius($radius)
+	overflow: hidden
 	&.special_white
 		.special__content
 			background: #FFF
 			border: 1px solid #d2d2d2
-			border-top-width: 0 
 	.special__media
 		height: 157px
+		margin-bottom: -1px
 		overflow: hidden
-		+border-radius(3px 3px 0 0)
 		img
 			max-width: 100%
 			display: block 
@@ -184,3 +186,56 @@
 		padding-bottom: 3px
 		margin-top: 8px
 		display: inline-block
+
+// slider
+// --------------------------------------------------
+.slider
+	width: 670px
+	padding-bottom: 15px
+	border: 1px solid #d2d2d2
+	border-top-width: 0
+	.slider__item
+		width: 100%
+	.slider__media
+		width: 674px
+		margin: 0 -2px
+		height: 422px
+		overflow: hidden
+		+border-radius(3px 3px 0 0) 
+		img
+			width: 100%
+			display: block
+	.slider__cont
+		// border: 1px solid #d2d2d2
+		// border-top-width: 0
+		padding: 15px 18px 0
+		+border-radius(0 0 3px 3px) 
+	.slider__nav
+		text-align: center
+	.slider__prev, .slider__next
+		display: inline-block
+		cursor: pointer
+		&.disabled
+			+opacity(0.4)
+	.slider__prev
+		+s(i-prev)
+	.slider__next
+		+s(i-next)
+	.slider__pagi
+		margin: 0 20px
+		display: inline-block
+		span
+			width: 4px
+			height: 4px
+			+border-radius(50%)
+			border: 1px solid #474747
+			display: inline-block
+			vertical-align: middle
+			font-size: 0
+			cursor: pointer
+			margin-left: 10px
+			&.cycle-pager-active
+				background: #ffe400
+				border-color: #ffe400
+			&:first-child
+				margin-left: 0
