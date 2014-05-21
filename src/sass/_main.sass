@@ -264,6 +264,30 @@
 		padding: 30px 0
 		border-bottom: 1px solid #d7d7d7
 		+clr
+		&.calc__type_select
+			position: relative
+			padding: 0
+			.calc__typeitem
+				position: relative
+				&.is-active
+					&:before
+						content: ""
+						+s(select_a)
+						position: absolute
+						top: 25px
+						left: 50%
+						margin-left: -29px
+						z-index: 100
+			.calc__typeitem
+				&:after
+					content: ""
+					+s(select)
+					position: absolute
+					top: 20px
+					left: 50%
+					margin-left: -34px
+			.calc__typemedia
+				height: 107px
 	.calc__typemeta
 		width: 190px
 		height: 181px
@@ -277,6 +301,17 @@
 		width: 160px
 		float: left
 		text-align: center
+		&.is-active
+			position: relative
+			&:after
+				content: ""
+				+s(select_a)
+				position: absolute
+				top: 25px
+				left: 50%
+				margin-left: -32px
+		.title-strong
+			margin-bottom: 0
 	.calc__typemedia
 		width: 126px
 		height: 134px
