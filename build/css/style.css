@@ -267,6 +267,7 @@ p + table { margin-top: 25px; }
 .bonus .bonus__itemimg { width: 178px; margin-right: 20px; float: left; }
 .bonus .bonus__itemdescr { overflow: hidden; }
 
+.special.special_white .special__content { background: white; border: 1px solid #d2d2d2; border-top-width: 0; }
 .special .special__media { height: 157px; overflow: hidden; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; }
 .special .special__media img { max-width: 100%; display: block; }
 .special .special__content { padding: 15px 20px; background: #ffe400; -webkit-border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; -ms-border-radius: 0 0 3px 3px; -o-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px; font-size: 12px; }
