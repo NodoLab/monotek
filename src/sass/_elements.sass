@@ -169,7 +169,7 @@ blockquote,
 		padding-right: 20px
 		padding-bottom: 4px
 		padding-left: 10px
-		font-size: 13px
+		font-size: $size-s
 		&:after
 			top: 9px
 			right: 10px
@@ -197,7 +197,25 @@ blockquote,
 		&:after
 			right: 32px
 .btn-muted
-
+	padding-top: 5px
+	padding-right: 19px
+	padding-bottom: 5px
+	padding-left: 9px
+	background: #FFF
+	border: 1px solid #a1a1a1
+	+border-radius($radius)
+	font-size: $size-s
+	text-transform: uppercase
+	font-family: $font-bold
+	color: #000
+	text-decoration: none
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 8px
+		right: 10px
+		+s(i-arr)
 // Grid
 // --------------------------------------------------
 %in
@@ -229,9 +247,3 @@ blockquote,
 		width: 250px
 		margin-left: $mr-base
 		float: left
-
-.entry
-
-
-// Tab container
-// --------------------------------------------------
