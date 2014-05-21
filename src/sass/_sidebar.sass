@@ -1,14 +1,15 @@
 // sidebar
 // --------------------------------------------------
 .sidebar
+	margin-top: -48px
 	&.sidebar_index
 		margin-top: -428px
-	.sidebar__monotek
+		.logo
+			+s(logo_index)
+	.logo
 		margin-bottom: 10px
 		display: block
-		+s(i-monotek)
-		&.sidebar__monotek_mod
-			+s(i-monotek_mod)
+		+s(logo)
 	.sidebar__row
 		padding: 19px 0
 		border-top: 1px solid $gray-light
