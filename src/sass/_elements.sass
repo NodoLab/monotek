@@ -201,7 +201,7 @@ blockquote,
 	padding-right: 19px
 	padding-bottom: 5px
 	padding-left: 9px
-	background: #FFF
+	background: transparent
 	border: 1px solid #a1a1a1
 	+border-radius($radius)
 	font-size: $size-s
@@ -216,6 +216,8 @@ blockquote,
 		top: 8px
 		right: 10px
 		+s(i-arr)
+	&.btn-muted_mod
+		border-color: $gray-dark 
 // Grid
 // --------------------------------------------------
 %in
@@ -232,6 +234,10 @@ blockquote,
 
 .l
 	+clr
+	&.l-mb
+		margin-bottom: 15px
+	&.l-mt
+		margin-top: 25px
 	.l-sidebar
 		width: 250px
 		float: left
