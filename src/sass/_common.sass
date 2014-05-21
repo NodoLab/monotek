@@ -3,12 +3,20 @@
 
 // Common blocks
 // --------------------------------------------------
+html, body
+	height: 100%
+
 body
 	font-family: $font-base
 	font-size: $size-base
 	color: $color-base
 	line-height: 1.35
 	background-color: $bg-base
+	
+.out
+	min-height: 100%
+	height: auto !important
+	height: 100%
 
 table,
 .table
@@ -37,6 +45,8 @@ p + table
 
 .page
 	margin-bottom: 50px
+	&.page_index
+		margin-bottom: 0
 
 .page-title
 	+clr

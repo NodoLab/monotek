@@ -67,4 +67,17 @@ function tab() {
 		});
 } tab();
 
+// sticky footer
+$(function() {
+    var footerHeight = $(".footer-wrap").height();
+    $(".out").css("margin-bottom", -footerHeight);
+    $(".push").css("height", footerHeight);
+});
+
+$(window).resize(function() {
+    var footerHeight = $(".footer-wrap").height();
+    $(".out").css("margin-bottom", -footerHeight);
+    $(".push").css("height", footerHeight);
+});
+
 });

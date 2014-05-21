@@ -82,7 +82,11 @@ blockquote p:last-child, .blockquote p:last-child { margin-bottom: 0; }
 .l .l-col1 { width: 380px; float: left; }
 .l .l-col2 { width: 250px; margin-left: 40px; float: left; }
 
+html, body { height: 100%; }
+
 body { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color: #333333; line-height: 1.35; background-color: white; }
+
+.out { min-height: 100%; height: auto !important; height: 100%; }
 
 table, .table { font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; line-height: 1.35; color: #333333; text-align: left; }
 table th, table td, .table th, .table td { border: 1px solid #d1d1d1; border-width: 1px 0; padding: 9px 10px 8px; }
@@ -93,6 +97,7 @@ p + table { margin-top: 25px; }
 .elements { width: 375px; margin: auto; }
 
 .page { margin-bottom: 50px; }
+.page.page_index { margin-bottom: 0; }
 
 .page-title { *zoom: 1; }
 .page-title:after { content: " "; display: table; clear: both; }
