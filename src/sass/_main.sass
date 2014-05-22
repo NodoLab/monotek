@@ -243,6 +243,7 @@
 // .calc
 // --------------------------------------------------
 .calc
+	margin-bottom: 25px
 	.calc__sq
 		height: 70px
 		padding-top: 24px
@@ -324,4 +325,33 @@
 		color: $gray-dark
 	.calc__btn
 		margin-top: 20px
-
+		
+// contactus
+// --------------------------------------------------
+.contactus
+	margin-top: 35px
+	+clr
+	.contactus__label1, .contactus__label2
+		position: relative
+		a
+			text-decoration: none
+		&:before
+			content: ""
+			position: absolute
+			top: -8px
+	.contactus__label1
+		width: 317px
+		padding-left: 83px
+		float: left
+		&:before
+			+s(tel)
+			left: 0
+	.contactus__label2
+		width: 187px
+		padding-left: 83px
+		float: left
+		&:before
+			+s(tel)
+			left: 0
+	.contactus__title
+		margin-bottom: 0
