@@ -1,8 +1,11 @@
 head.ready(function() {
 	console.log("These aren't the droids you're looking for!");
 
+	$('.fancybox').fancybox();
+
 	$('.flexslider').flexslider({
 		animation: "slide",
+		slideshow: false,
 		controlNav: "thumbnails",
 		manualControls: "flexslider__control-thumbs",
 		directionNav: false,
