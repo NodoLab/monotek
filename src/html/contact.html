@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" media="screen" href="../css/style.css">
+
+	<style type="text/css"> 
+		#map{ height: 428px }
+	</style>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+	<script type="text/javascript">
+	  function initialize() {
+	    var mapOptions = {
+	      center: new google.maps.LatLng(55.710864, 37.656329),
+	      disableDefaultUI: true,
+	      draggable: false,
+	      zoom: 16
+	    };
+	    var map = new google.maps.Map(document.getElementById("map"),
+	        mapOptions);
+
+	    var myLatLng1 = new google.maps.LatLng(55.710864, 37.656329);
+
+
+			var marker1 = new google.maps.Marker({
+			           position: myLatLng1,
+			           map: map,
+			           title: 'Uluru (Ayers Rock)'
+			     });
+
+			var contentString1 = '<div style="width:200px;">'
+			       +'<p>ул. Ленинградская слобода 26</p>'
+			       +'<p>6 этаж</p>'
+			      '</div>';
+
+      var infowindow1 = new google.maps.InfoWindow({
+               content: contentString1
+           });
+
+			google.maps.event.addListener(marker1, 'click', function(){
+			         infowindow1.open(map,marker1);
+			     });
+
+	  }
+	  google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+
+</head>
+<body>
+<div class="out">
+	<div class="header header_contact">
+		<div class="header__map">
+			<div id="map"></div>
+		</div>
+	</div>
+	<!-- /.header -->
+	 <div class="page">
+	 	<div class="main container">
+	 		<div class="l">
+	 			<div class="l-sidebar">
+	 				@@include('_sidebar.html', {"mod": "sidebar_map"})
+	 			</div>
+	 			<div class="l-main">
+	 				<ul class="breadcrumbs">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+					</ul>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+	<!-- /.page -->
+	
+	<div class="push"></div>
+	<!-- /.push -->
+</div>
+<!-- /.out -->
+@@include('_footer.html')
+
+<script src="../js/lib/head.js" data-headjs-load="../js/init.js"></script>
+</body>
+</html>

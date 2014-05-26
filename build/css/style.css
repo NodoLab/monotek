@@ -209,10 +209,12 @@ p + table { margin-top: 25px; }
 
 .header { height: 198px; background-image: url(../img/header_index.jpg); overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .header.header_index { height: 428px; }
+.header.header_contact { height: 428px; background: transparent; }
 
 .sidebar { margin-top: -48px; }
 .sidebar.sidebar_index { margin-top: -428px; }
 .sidebar.sidebar_index .logo { background: url('../img/icons-s68a88a302a.png') 0 -407px no-repeat; width: 250px; height: 172px; }
+.sidebar.sidebar_map { position: relative; z-index: 1000; }
 .sidebar .logo { margin-bottom: 10px; display: block; background: url('../img/icons-s68a88a302a.png') 0 -85px no-repeat; width: 250px; height: 130px; }
 .sidebar .sidebar__row { padding: 19px 0; border-top: 1px solid #d2d2d2; color: black; }
 .sidebar .sidebar__row:first-child { border-top-color: transparent; }
