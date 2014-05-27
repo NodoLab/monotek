@@ -106,7 +106,7 @@
 
 .dropnav
 	display: none
-	padding: 15px 25px 15px 25px
+	padding: 15px 0
 	background: #FFF
 	border-top: 1px solid #d7d7d7 
 	li
@@ -114,6 +114,18 @@
 		&:first-child
 			margin-top: 0
 		a
+			padding: 0 25px
+			display: block
 			color: $gray-dark
 			text-decoration: none
-			 
+			position: relative
+			&.is-active
+				&:after
+					content: ""
+					width: 8px
+					height: 8px
+					+border-radius(50%)
+					background: $yellow
+					position: absolute
+					top: 6px
+					right: 13px
