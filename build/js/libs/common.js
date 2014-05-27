@@ -1,9 +1,11 @@
-head.ready(function() {
-	console.log("These aren't the droids you're looking for!");
+$(document).ready(function(){
 
-	$('.fancybox').fancybox();
+	$('.fancybox').fancybox({
+			prevEffect		: 'none',
+			nextEffect		: 'none'
+	});
 
-	$('.flexslider').flexslider({
+	$('.flexslider').flexslider({ 
 		animation: "slide",
 		slideshow: false,
 		controlNav: "thumbnails",
