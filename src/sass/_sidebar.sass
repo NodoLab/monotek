@@ -2,6 +2,8 @@
 // --------------------------------------------------
 .sidebar
 	margin-top: -48px
+	position: relative
+	z-index: 100
 	&.sidebar_index
 		margin-top: -428px
 		.logo
@@ -19,6 +21,8 @@
 		color: #000
 		&:first-child
 			border-top-color: transparent
+		&.sidebar__row_tel
+			border-top: none 
 	.sidebar__rowlabel
 		padding: 0 5px
 	.sidebar__rowdescr
@@ -65,6 +69,8 @@
 					padding: 9px 26px
 					border-top-color: transparent
 			&.has-dropnav
+				position: relative
+				z-index: 1000
 				.dropnav
 					display: block
 			& > a

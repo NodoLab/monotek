@@ -14,6 +14,8 @@
 	@include box-shadow(0 5px 10px rgba(0,0,0,.07))
 	&.calcwdg_index
 		margin-top: -78px
+		position: relative
+		z-index: 100
 	.calcwdg__meta
 		margin-bottom: 12px
 		font-size: $size-l
@@ -107,6 +109,7 @@
 			height: 77px
 			line-height: 77px
 			overflow: hidden
+			+border-radius(2px)
 		a
 			display: block
 		img
@@ -331,6 +334,15 @@
 .contactus
 	margin-top: 35px
 	+clr
+	&.contactus_mod
+		margin-top: 0
+		.contactus__label1
+			margin-bottom: 20px
+			float: none
+		.contactus__label_noimg
+			margin-bottom: 20px
+		.contactus__label2
+			float: none
 	.contactus__label1, .contactus__label2
 		position: relative
 		a
@@ -351,7 +363,21 @@
 		padding-left: 83px
 		float: left
 		&:before
-			+s(tel)
+			+s(headphone)
 			left: 0
+	.contactus__label_noimg
+		padding-left: 83px
 	.contactus__title
 		margin-bottom: 0
+
+// contact
+// --------------------------------------------------
+.contact
+	+clr
+	.contact__left
+		width: 380px
+		margin-right: $mr-base
+		float: left
+	.contact__right
+		width: 250px
+		float: left
