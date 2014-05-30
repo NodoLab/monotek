@@ -9,7 +9,7 @@
 					src: [
 						'src/js/libs/jquery.js',
 						'src/js/libs/cycle.js',
-						'src/js/libs/jquery.fancybox.pack.js',
+						'src/js/libs/jquery.fancybox.js',
 						'src/js/libs/jquery.flexslider.js',
 						'src/js/common.js'
 					],
@@ -61,13 +61,23 @@
 							cwd: "src/fonts",
 							src: ["**"],
 							dest: "build/fonts"
+						}, {
+							expand: true,
+							cwd: "src/features/",
+							src: ["**"],
+							dest: "build/features/"
+						}, {
+							expand: true,
+							cwd: "src/css/",
+							src: ["**"],
+							dest: "build/css/"
 						}
 					]
 				}
 			},
 
 			watch: {
-				files: ["src/html/*.html", "src/features/", "src/js/*.js", "src/js/libs/*.js", "src/img/icons*.png"],
+				files: ["src/html/*.html", "src/features/",  "src/css/", "src/js/*.js", "src/js/libs/*.js", "src/img/", "src/img/icons*.png"],
 				tasks: ['includereplace', 'concat', 'uglify', 'copy', 'clean']
 			}
 
