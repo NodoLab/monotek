@@ -5,7 +5,7 @@ $(document).ready(function(){
 			nextEffect		: 'none'
 	});
 
-	$('.flexslider').flexslider({ 
+	$('.flexslider').flexslider({
 		animation: "slide",
 		slideshow: false,
 		controlNav: "thumbnails",
