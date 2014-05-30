@@ -53,7 +53,7 @@ $(document).ready(function(){
 	});
 
 //tab
-function tab() {
+function tab() { 
 	$(".js-tab").each(function(){
 		var tab_link = $(this).find("a");
 		var tab_item = $(this).find("li");

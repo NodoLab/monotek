@@ -11,7 +11,7 @@
 						'src/js/libs/cycle.js',
 						'src/js/libs/jquery.fancybox.pack.js',
 						'src/js/libs/jquery.flexslider.js',
-						'src/js/libs/common.js'
+						'src/js/common.js'
 					],
 					dest: 'build/js/scripts.js'
 				}
@@ -39,7 +39,7 @@
 			},
 
 			clean: {
-				files: ["build/html/_*.html", "build/js/libs/"]
+				files: ["build/html/_*.html", "build/js/*.js", "!build/js/*.min.js"]
 			},
 
 			copy: {
@@ -61,16 +61,6 @@
 							cwd: "src/fonts",
 							src: ["**"],
 							dest: "build/fonts"
-						}, {
-							expand: true,
-							cwd: "src/features/",
-							src: ["**"],
-							dest: "build/features/"
-						}, {
-							expand: true,
-							cwd: "src/js/",
-							src: ["**"],
-							dest: "build/js/"
 						}
 					]
 				}
@@ -86,6 +76,7 @@
 
 		// Загрузка плагинов, установленных с помощью npm install
 		// grunt.registerTask("default", ["watch"]);
+		grunt.loadNpmTasks('grunt-contrib-watch');
 		grunt.loadNpmTasks('grunt-contrib-concat');
 		grunt.loadNpmTasks('grunt-contrib-uglify');
 
