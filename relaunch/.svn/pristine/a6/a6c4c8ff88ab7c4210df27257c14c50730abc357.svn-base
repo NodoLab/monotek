@@ -1,0 +1,131 @@
+// sidebar
+// --------------------------------------------------
+.sidebar
+	margin-top: -48px
+	position: relative
+	z-index: 100
+	&.sidebar_index
+		margin-top: -428px
+		.logo
+			+s(logo_index)
+	&.sidebar_map
+		position: relative
+		z-index: 1000
+	.logo
+		margin-bottom: 10px
+		display: block
+		+s(logo)
+	.sidebar__row
+		padding: 19px 0
+		border-top: 1px solid $gray-light
+		color: #000
+		&:first-child
+			border-top-color: transparent
+		&.sidebar__row_tel
+			border-top: none 
+	.sidebar__rowlabel
+		padding: 0 5px
+	.sidebar__rowdescr
+		margin-bottom: 7px
+		line-height: 1
+
+// telephone
+// --------------------------------------------------
+.telephone
+	padding: 0 7px
+	line-height: 1
+	&.telephone_sidebar
+		padding: 8px 7px
+		.telephone__num
+			margin-top: 3px
+	.telephone__num
+		font-size: 24px
+		letter-spacing: 0.02em
+		font-family: $font-bold
+		color: #000
+		text-decoration: none
+		&:before
+			content: ""
+			margin-right: 7px
+			margin-left: 3px
+			display: inline-block
+			vertical-align: middle
+			+s(i-tel)
+		a
+			font-size: 24px
+			font-family: $font-bold
+			color: #000
+			text-decoration: none
+
+// nav
+// --------------------------------------------------
+.nav
+	& > ul
+		+border-radius($radius)
+		overflow: hidden
+		& > li
+			&:first-child
+				a
+					padding: 9px 26px
+					border-top-color: transparent
+			&.has-dropnav
+				position: relative
+				z-index: 1000
+				.dropnav
+					display: block
+			& > a
+				padding: 7px 26px
+				display: block
+				border-top: 1px solid #fdff54 
+				font-size: 20px
+				background: $yellow
+				color: #000
+				text-decoration: none
+				&.is-active, &:hover
+					background: #ffffff
+					position: relative
+					border-color: #DEE04A 
+					&:after
+						content: ""
+						width: 8px
+						height: 8px
+						+border-radius(50%)
+						background: $yellow
+						position: absolute
+						top: 17px
+						right: 13px
+					&:before
+						content: ""
+						width: 100%
+						height: 5px
+						position: absolute
+						top: 0px
+						left: 0
+						right: 0
+						background-image: url(../img/icons/nav_shadow.png)
+
+.dropnav
+	display: none
+	padding: 15px 0
+	background: #FFF
+	border-top: 1px solid #d7d7d7 
+	li
+		margin-top: 15px
+		&:first-child
+			margin-top: 0
+		a
+			padding: 0 25px
+			display: block
+			color: $gray-dark
+			text-decoration: none
+			position: relative
+			&.is-active
+				&:after
+					content: ""
+					width: 8px
+					height: 8px
+					+border-radius(50%)
+					background: $yellow
+					position: absolute
+					top: 6px
+					right: 13px

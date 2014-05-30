@@ -1,0 +1,41 @@
+// footer
+// --------------------------------------------------
+.footer
+	padding-top: 25px
+	padding-bottom: 25px
+	border-top: 1px solid #d2d2d2 
+	border-bottom: 1px solid #d2d2d2 
+	font-size: $size-s
+	color: #000
+	font-family: $font-base 
+	.footer__items
+		+clr
+	.footer__item
+		width: 293px
+		margin-left: $mr-base
+		float: left
+		&:first-child
+			margin-left: 0
+	.footer__row
+		margin-bottom: 10px
+		+clr
+	.footer__rowlabel1
+		width: 80px
+		float: left
+	.footer__rowlabel2
+		float: left
+		font-family: $font-bold
+	.footer__label
+		margin-bottom: 10px
+		margin-left: 80px
+		font-family: $font-bold
+	.footer__link, .footer__addr
+		display: block
+		color: #000
+		text-decoration: none
+
+.copyright
+	padding-bottom: 24px
+	margin-top: 23px
+	font-size: $size-s
+	color: $gray-dark  

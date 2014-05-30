@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" media="screen" href="../css/style.css">
+</head>
+<body>
+<div class="out">
+	<div class="header header_small">
+		<img src="../img/header_index.jpg" alt="">
+	</div>
+	<!-- /.header -->
+	 <div class="page">
+	 	<div class="main container">
+	 		<div class="l">
+	 			<div class="l-sidebar">
+	 				@@include('_sidebar.html', {"mod": ""})
+	 			</div>
+	 			<div class="l-main">
+	 				<ul class="breadcrumbs">
+						<li><a href="#">СК-МОНОТЕК</a></li>
+						<li><a href="#">Калькулятор ремонта</a></li>
+					</ul>
+					<div class="calc">
+						<h1 class="h1">Калькулятор ремонта</h1>
+						<div class="calc__sq">
+							<div class="calc__sqin">
+								<div class="calc__sqmeta title-strong">Площадь помещения</div>
+								<input type="text" class="calc__sqinput input" placeholder="Площадь помещения, м2">
+							</div>
+						</div>
+						<div class="calc__type">
+							<div class="calc__typemeta title-strong">Тип дома</div>
+							<div class="calc__typeitems">
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"><img src="../img/type1.png" alt=""></div>
+									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
+								</div>
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"><img src="../img/type2.png" alt=""></div>
+									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
+								</div>
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"><img src="../img/type3.png" alt=""></div>
+									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
+								</div>
+							</div>
+						</div>
+						<div class="calc__type calc__type_select">
+							<div class="calc__typemeta title-strong">Тип дома</div>
+							<div class="calc__typeitems">
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"></div>
+									<div class="calc__typedescr">
+										<div class="title-strong">Бизнес-класс</div>
+										<p>Краткое описание</p>
+									</div>
+								</div>
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"></div>
+									<div class="calc__typedescr">
+										<div class="title-strong">элит-класс</div>
+										<p>Краткое описание</p>
+									</div>
+								</div>
+								<div class="calc__typeitem">
+									<div class="calc__typemedia"></div>
+									<div class="calc__typedescr">
+										<div class="title-strong">эксклюзив</div>
+										<p>Краткое описание</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="calc__btn btn">Рассчитать</a>
+					</div>
+					<!-- /.calc -->
+					
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+	<!-- /.page -->
+	
+	<div class="push"></div>
+	<!-- /.push -->
+</div>
+<!-- /.out -->
+@@include('_footer.html')
+
+<script src="../js/scripts.min.js"></script>
+</body>
+</html>
