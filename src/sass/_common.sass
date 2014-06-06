@@ -17,6 +17,9 @@ body
 	height: auto !important
 	height: 100%
 
+.table-wrap
+	padding: 15px 30px 5px
+	background: #f5f5f5 
 table,
 .table
 	font-family: $font-base
@@ -24,10 +27,18 @@ table,
 	line-height: 1.35
 	color: $color-base
 	text-align: left
+	&.table_bg
+	thead
+		tr
+			&:first-child
+				td
+					border-top: none 
 	th, td
 		border: 1px solid #d1d1d1
 		border-width: 1px 0
 		padding: 9px 10px 8px
+		&.table__bordernone
+			border-color: transparent 
 	th
 		font-family: $font-bold
 		font-weight: normal

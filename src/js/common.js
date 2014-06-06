@@ -52,6 +52,13 @@ $(document).ready(function(){
 		$('.js-select').removeClass('is-open');
 	});
 
+	$(".js-send-table").click(function() {
+		$('.js-table').slideToggle( "fast", function() {
+    // Animation complete.
+  });
+		return false;
+	});
+
 //tab
 function tab() {
 	$(".js-tab").each(function(){

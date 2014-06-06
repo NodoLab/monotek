@@ -2,13 +2,13 @@
 <html>
 <head> 
 	<meta charset="UTF-8">
-	<title></title> 
+	<title></title>
 	<meta name="viewport" content="initial-scale=1">
 	<link rel="stylesheet" href="../css/jquery.fancybox.css">
 	<link rel="stylesheet" media="screen" href="../css/style.css">
 </head>
 <body>
-<div class="out"> 
+<div class="out">
 	<div class="header header_small">
 		<img src="../img/content/header_index_small.jpg" alt="">
 	</div>
@@ -17,7 +17,7 @@
 	 	<div class="main container">
 	 		<div class="l">
 	 			<div class="l-sidebar">
-	 				 <div class="sidebar ">
+	 				 <div class="sidebar is-active">
  	<a href="#" class="logo"></a>
  	<div class="nav">
  		<ul>
@@ -35,7 +35,7 @@
  				</ul>
  			</li>
  			<li><a href="#">Бонусная программа</a></li>
- 			<li><a href="#" class="">Калькулятор ремонта</a></li>
+ 			<li><a href="#" class="is-active">Калькулятор ремонта</a></li>
  			<li><a href="#">Контакты</a></li>
  		</ul>
  	</div>
@@ -77,7 +77,7 @@
 						<div class="calc__type">
 							<div class="calc__typemeta title-strong">Тип дома</div>
 							<div class="calc__typeitems">
-								<div class="calc__typeitem">
+								<div class="calc__typeitem is-active">
 									<div class="calc__typemedia"><img src="../img/type1.png" alt=""></div>
 									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
 								</div>
@@ -94,7 +94,7 @@
 						<div class="calc__type calc__type_select">
 							<div class="calc__typemeta title-strong">Тип дома</div>
 							<div class="calc__typeitems">
-								<div class="calc__typeitem">
+								<div class="calc__typeitem is-active">
 									<div class="calc__typemedia"></div>
 									<div class="calc__typedescr">
 										<div class="title-strong">Бизнес-класс</div>
@@ -117,10 +117,60 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" class="calc__btn btn">Рассчитать</a>
+						<a href="#" class="calc__btn btn js-send-table">Рассчитать</a>
 					</div>
 					<!-- /.calc -->
-					
+					<div class="js-table">
+						<div class="table-wrap">
+							<table class="table table_bg">
+								<thead>
+									<tr>
+										<td colspan="2"><h2 class="h2">Стоимость ремонта</h2></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Площадь помещения</td>
+										<td>100 м2</td>
+									</tr>
+									<tr>
+										<td>Тип дома</td>
+										<td>Старый дом с деревянными перекрытиями</td>
+									</tr>
+									<tr>
+										<td>Руководитель отделочных работ</td>
+										<td>Джамшут Галустян</td>
+									</tr>
+									<tr>
+										<td>Поставка мебели</td>
+										<td>8 Марта</td>
+									</tr>
+									<tr>
+										<td>Тип ремонта</td>
+										<td>Эксклюзив</td>
+									</tr>
+									<tr>
+										<td>Дата сдачи объекта</td>
+										<td>1 января 2014 г.</td>
+									</tr>
+									<tr>
+										<td class="table__bordernone"><div class="title-strong title-strong_lowpercase">Итого</div></td>
+										<td class="table__bordernone"><div class="title-strong">1 250 000 руб.</div></td>
+									</tr>
+								</tbody>
+							</table>			
+						</div>
+						<div class="contactus">
+							<div class="contactus__label1">
+								<a href="calto:+7 (967) 005-14-41" class="h2 contactus__title">+7 (967) 005-14-41</a>
+								<div class="title-strong">Позвоните нам прямо сейчас</div>
+							</div>
+							<div class="contactus__label2">
+								<h2 class="h2 contactus__title">Звонок с сайта</h2>
+								<div class="title-strong">Бесплатно</div>
+							</div>
+						</div>
+					</div>
 	 			</div>
 	 		</div>
 	 	</div>
