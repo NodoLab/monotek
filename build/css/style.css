@@ -348,18 +348,21 @@ p + table { margin-top: 25px; }
 .calc .calc__type:after { content: " "; display: table; clear: both; }
 .calc .calc__type.calc__type_select { position: relative; padding: 0; }
 .calc .calc__type.calc__type_select .calc__typeitem { position: relative; }
-.calc .calc__type.calc__type_select .calc__typeitem.is-active:before { content: ""; background: url('../img/icons-s68a88a302a.png') 0 -739px no-repeat; width: 65px; height: 65px; position: absolute; top: 25px; left: 50%; margin-left: -29px; z-index: 100; }
-.calc .calc__type.calc__type_select .calc__typeitem:after { content: ""; background: url('../img/icons-s68a88a302a.png') 0 0 no-repeat; width: 75px; height: 75px; position: absolute; top: 20px; left: 50%; margin-left: -34px; }
-.calc .calc__type.calc__type_select .calc__typemedia { height: 107px; }
+.calc .calc__type.calc__type_select .calc__typeitem .calc__typedescr { margin-top: 30px; }
+.calc .calc__type.calc__type_select .calc__typeitem:after { content: ""; position: absolute; top: 20px; left: 50%; margin-left: -34px; }
 .calc .calc__typemeta { width: 145px; padding-left: 12px; height: 181px; line-height: 181px; margin-bottom: 0; float: left; }
 .calc .calc__typeitems { overflow: hidden; *zoom: 1; }
 .calc .calc__typeitems:after { content: " "; display: table; clear: both; }
 .calc .calc__typeitem { width: 170px; float: left; text-align: center; }
 .calc .calc__typeitem.is-active { position: relative; }
 .calc .calc__typeitem.is-active:after { content: ""; background: url('../img/icons-s68a88a302a.png') 0 -739px no-repeat; width: 65px; height: 65px; position: absolute; top: 25px; left: 50%; margin-left: -32px; }
+.calc .calc__typeitem .calc__typemedia { cursor: pointer; }
 .calc .calc__typeitem .title-strong { margin-bottom: 0; }
 .calc .calc__typemedia { width: 126px; height: 134px; margin-left: auto; margin-right: auto; }
 .calc .calc__typemedia img { max-width: 100%; max-height: 100%; }
+.calc input.calc__typemedia { height: 75px; width: 75px; position: relative; top: 20px; z-index: 1000; cursor: pointer; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.calc input.calc__typemedia + .calc__typemediaico { background: url('../img/icons-s68a88a302a.png') 0 0 no-repeat; width: 75px; height: 75px; position: absolute; top: 20px; left: 50%; margin-left: -38px; cursor: pointer; }
+.calc input.calc__typemedia:checked + .calc__typemediaico:after { content: ""; position: absolute; top: 5px; left: 5px; background: url('../img/icons-s68a88a302a.png') 0 -739px no-repeat; width: 65px; height: 65px; }
 .calc .calc__typedescr { color: #333333; padding: 0 10px; }
 .calc .calc__btn { margin-top: 20px; }
 

@@ -285,25 +285,16 @@
 			padding: 0
 			.calc__typeitem
 				position: relative
-				&.is-active
-					&:before
-						content: ""
-						+s(select_a)
-						position: absolute
-						top: 25px
-						left: 50%
-						margin-left: -29px
-						z-index: 100
+				.calc__typedescr
+					margin-top: 30px
 			.calc__typeitem
 				&:after
 					content: ""
-					+s(select)
+					// +s(select)
 					position: absolute
 					top: 20px
 					left: 50%
 					margin-left: -34px
-			.calc__typemedia
-				height: 107px
 	.calc__typemeta
 		width: 145px
 		padding-left: 12px
@@ -327,6 +318,8 @@
 				top: 25px
 				left: 50%
 				margin-left: -32px
+		.calc__typemedia
+			cursor: pointer
 		.title-strong
 			margin-bottom: 0
 	.calc__typemedia
@@ -337,6 +330,28 @@
 		img
 			max-width: 100%
 			max-height: 100%
+	input.calc__typemedia
+		height: 75px
+		width: 75px
+		position: relative
+		top: 20px
+		z-index: 1000
+		cursor: pointer
+		+opacity(0)
+	input.calc__typemedia + .calc__typemediaico
+		+s(select)
+		position: absolute
+		top: 20px
+		left: 50%
+		margin-left: -38px
+		cursor: pointer
+	input.calc__typemedia:checked + .calc__typemediaico
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			left: 5px
+			+s(select_a)
 	.calc__typedescr
 		color: $gray-dark
 		padding: 0 10px

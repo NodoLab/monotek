@@ -53,10 +53,15 @@ $(document).ready(function(){
 	});
 
 	$(".js-send-table").click(function() {
-		$('.js-table').slideToggle( "fast", function() {
-    // Animation complete.
-  });
+		$('.js-table').slideToggle( "fast", function() {});
 		return false;
+	});
+
+	$(".js-data-type .calc__typeitem").click(function() {
+		$(this).addClass('is-active').siblings().removeClass('is-active');
+
+		var attr = $(this).attr('data-type');
+		$(".js-hidden-input").removeClass(attr).addClass(attr);
 	});
 
 //tab

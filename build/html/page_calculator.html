@@ -74,53 +74,57 @@
 								<input type="text" class="calc__sqinput input" placeholder="Площадь помещения, м2">
 							</div>
 						</div>
-						<div class="calc__type">
+						<div class="js-data-type calc__type">
+							<input type="hidden" class="js-hidden-input">
 							<div class="calc__typemeta title-strong">Тип дома</div>
 							<div class="calc__typeitems">
-								<div class="calc__typeitem is-active">
+								<div class="calc__typeitem is-active" data-type="type1">
 									<div class="calc__typemedia"><img src="../img/type1.png" alt=""></div>
 									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
 								</div>
-								<div class="calc__typeitem">
+								<div class="calc__typeitem" data-type="type2">
 									<div class="calc__typemedia"><img src="../img/type2.png" alt=""></div>
-									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
+									<div class="calc__typedescr">Старый дом с железобетонными перекрытиями</div>
 								</div>
-								<div class="calc__typeitem">
+								<div class="calc__typeitem" data-type="type3">
 									<div class="calc__typemedia"><img src="../img/type3.png" alt=""></div>
-									<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
+									<div class="calc__typedescr">Новый панельный, монолитный или кирпичный дом</div>
 								</div>
 							</div>
 						</div>
 						<div class="calc__type calc__type_select">
 							<div class="calc__typemeta title-strong">Тип дома</div>
 							<div class="calc__typeitems">
-								<div class="calc__typeitem is-active">
-									<div class="calc__typemedia"></div>
-									<div class="calc__typedescr">
-										<div class="title-strong">Бизнес-класс</div>
-										<p>Краткое описание</p>
+								<form id="data">
+									<div class="calc__typeitem">
+										<input type="radio" name="radio" class="calc__typemedia" checked>
+										<i class="calc__typemediaico"></i>
+										<div class="calc__typedescr">
+											<div class="title-strong">Бизнес-класс</div>
+											<p>Краткое описание</p>
+										</div>
 									</div>
-								</div>
-								<div class="calc__typeitem">
-									<div class="calc__typemedia"></div>
-									<div class="calc__typedescr">
-										<div class="title-strong">элит-класс</div>
-										<p>Краткое описание</p>
+									<div class="calc__typeitem">
+										<input type="radio" name="radio" class="calc__typemedia"><i class="calc__typemediaico"></i>
+										<div class="calc__typedescr">
+											<div class="title-strong">элит-класс</div>
+											<p>Краткое описание</p>
+										</div>
 									</div>
-								</div>
-								<div class="calc__typeitem">
-									<div class="calc__typemedia"></div>
-									<div class="calc__typedescr">
-										<div class="title-strong">эксклюзив</div>
-										<p>Краткое описание</p>
+									<div class="calc__typeitem">
+										<input type="radio" name="radio" class="calc__typemedia"><i class="calc__typemediaico"></i>
+										<div class="calc__typedescr">
+											<div class="title-strong">эксклюзив</div>
+											<p>Краткое описание</p>
+										</div>
 									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 						<a href="#" class="calc__btn btn js-send-table">Рассчитать</a>
 					</div>
 					<!-- /.calc -->
-					<div class="js-table">
+					<div class="js-table" style="display:none;">
 						<div class="table-wrap">
 							<table class="table table_bg">
 								<thead>
