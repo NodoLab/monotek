@@ -61,7 +61,7 @@ $(document).ready(function(){
 		$(this).addClass('is-active').siblings().removeClass('is-active');
 
 		var attr = $(this).attr('data-type');
-		$(".js-hidden-input").removeClass(attr).addClass(attr);
+		$(".js-hidden-input").val(attr);
 	});
 
 //tab
