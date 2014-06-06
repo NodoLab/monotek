@@ -319,7 +319,7 @@ p + table { margin-top: 25px; }
 .special .special__title { margin-bottom: 8px; }
 .special .btn-muted { padding-top: 4px; padding-bottom: 2px; margin-top: 8px; display: inline-block; }
 
-.slider { width: 670px; padding-bottom: 15px; margin-bottom: 15px; border: 1px solid #d2d2d2; border-top-width: 0; }
+.slider { width: 670px; padding-bottom: 15px; margin-bottom: 15px; border: 1px solid #d2d2d2; border-top-width: 0; overflow: hidden; }
 .slider .slider__item { width: 100%; }
 .slider .slider__media { width: 674px; margin: 0 -2px; height: 422px; overflow: hidden; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; }
 .slider .slider__media img { width: 100%; display: block; }
