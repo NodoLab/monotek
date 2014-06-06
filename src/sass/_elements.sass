@@ -104,6 +104,8 @@ h6, .h6
 	line-height: 1.2 
 	text-transform: uppercase
 	color: #000
+a.title-strong
+	text-decoration: none
 p
 	margin-bottom: 10px
 
@@ -154,8 +156,8 @@ blockquote,
 .btn
 	padding-right: 31px
 	padding-left: 18px
-	padding-top: 5px
-	padding-bottom: 5px
+	padding-top: 6px
+	padding-bottom: 4px
 	background: $yellow
 	+border-radius($radius)
 	display: inline-block
@@ -171,6 +173,10 @@ blockquote,
 		top: 11px
 		right: 16px
 		+s(i-arr)
+	&:hover
+		background: #FFED52
+	&:active
+		+box-shadow(inset 0px 1px 0 #e8d84b)
 	&.btn_small
 		padding-top: 5px
 		padding-right: 20px
@@ -205,9 +211,9 @@ blockquote,
 		&:after
 			right: 32px
 .btn-muted
-	padding-top: 5px
+	padding-top: 6px
 	padding-right: 19px
-	padding-bottom: 5px
+	padding-bottom: 4px
 	padding-left: 9px
 	background: transparent
 	border: 1px solid #a1a1a1
@@ -224,8 +230,16 @@ blockquote,
 		top: 8px
 		right: 10px
 		+s(i-arr)
+	&:hover
+		background: #F6F6F6
+	&:active
+		+box-shadow(inset 0px 1px 0 #dddddd)
 	&.btn-muted_mod
-		border-color: $gray-dark 
+		border-color: $gray-dark
+		&:hover
+			background: #FFED52
+		&:active
+			+box-shadow(inset 0px 1px 0 #ccbe42)
 // Grid
 // --------------------------------------------------
 %in

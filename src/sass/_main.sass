@@ -19,7 +19,7 @@
 	.calcwdg__meta
 		margin-bottom: 12px
 		font-size: $size-l
-		font-family: $font-bold 
+		font-family: $font-base
 		text-transform: uppercase 
 		color: #000
 	.calcwdg__input
@@ -188,8 +188,8 @@
 	.special__title
 		margin-bottom: 8px
 	.btn-muted
-		padding-top: 3px
-		padding-bottom: 3px
+		padding-top: 4px
+		padding-bottom: 2px
 		margin-top: 8px
 		display: inline-block
 
@@ -341,7 +341,10 @@
 		margin-top: 0
 		.contactus__label1
 			margin-bottom: 20px
+			line-height: 1.6
 			float: none
+		.title-strong
+			margin-bottom: 0
 		.contactus__label_noimg
 			margin-bottom: 20px
 		.contactus__label2
@@ -410,7 +413,9 @@
 		border-top: 1px solid #d7d7d7 
 		+clr
 		&:first-child
-			border-top: none
+			border-top-color: transparent
+		&.form__row_noborder
+			border-top-color: transparent 
 	.form__row_mod
 		height: auto
 		line-height: 1.35
@@ -426,4 +431,8 @@
 		float: left
 	.input, .textarea
 		width: 460px
+		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.3))
+	.textarea
+		border-color: #a1a1a1
+
 		

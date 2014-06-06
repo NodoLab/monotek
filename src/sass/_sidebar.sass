@@ -81,19 +81,10 @@
 				background: $yellow
 				color: #000
 				text-decoration: none
-				&.is-active, &:hover
+				&.is-active
 					background: #ffffff
 					position: relative
 					border-color: #DEE04A 
-					&:after
-						content: ""
-						width: 8px
-						height: 8px
-						+border-radius(50%)
-						background: $yellow
-						position: absolute
-						top: 17px
-						right: 13px
 					&:before
 						content: ""
 						width: 100%
@@ -103,7 +94,18 @@
 						left: 0
 						right: 0
 						background-image: url(../img/icons/nav_shadow.png)
-
+				&.is-current
+					position: relative
+					background: #ffffff
+					&:after
+						content: ""
+						width: 8px
+						height: 8px
+						+border-radius(50%)
+						background: $yellow
+						position: absolute
+						top: 17px
+						right: 13px
 .dropnav
 	display: none
 	padding: 15px 0
@@ -128,4 +130,16 @@
 					background: $yellow
 					position: absolute
 					top: 6px
+					right: 13px
+			&.is-current
+				position: relative
+				background: #ffffff
+				&:after
+					content: ""
+					width: 8px
+					height: 8px
+					+border-radius(50%)
+					background: $yellow
+					position: absolute
+					top: 5px
 					right: 13px
