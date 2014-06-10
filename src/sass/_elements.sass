@@ -156,10 +156,10 @@ blockquote,
 // Buttons
 // --------------------------------------------------
 .btn
+	height: 31px
+	line-height: 31px
 	padding-right: 31px
 	padding-left: 18px
-	padding-top: 6px
-	padding-bottom: 4px
 	background: $yellow
 	+border-radius($radius)
 	display: inline-block
@@ -179,15 +179,22 @@ blockquote,
 		background: #FFED52
 	&:active
 		+box-shadow(inset 0px 1px 0 #e8d84b)
+		line-height: 32px
+		&:after
+			top: 12px
 	&.btn_small
-		padding-top: 5px
+		height: 27px
+		line-height: 27px
 		padding-right: 20px
-		padding-bottom: 4px
 		padding-left: 10px
 		font-size: $size-s
 		&:after
 			top: 9px
 			right: 10px
+		&:active
+			line-height: 28px
+			&:after
+				top: 10px
 	&.btn_map
 		padding-left: 35px
 		padding-right: 25px
@@ -213,10 +220,11 @@ blockquote,
 		&:after
 			right: 32px
 .btn-muted
-	padding-top: 6px
+	height: 27px
+	line-height: 27px
 	padding-right: 19px
-	padding-bottom: 4px
 	padding-left: 9px
+	display: inline-block
 	background: transparent
 	border: 1px solid #a1a1a1
 	+border-radius($radius)
@@ -229,13 +237,16 @@ blockquote,
 	&:after
 		content: ""
 		position: absolute
-		top: 8px
+		top: 9px
 		right: 10px
 		+s(i-arr)
 	&:hover
 		background: #F6F6F6
 	&:active
+		line-height: 28px
 		+box-shadow(inset 0px 1px 0 #dddddd)
+		&:after
+			top: 10px
 	&.btn-muted_mod
 		border-color: $gray-dark
 		&:hover
