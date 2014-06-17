@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
 	$('.fancybox').fancybox({
-			prevEffect		: 'none',
-			nextEffect		: 'none'
+		prevEffect		: 'none',
+		nextEffect		: 'none'
 	});
 
-	$('.flexslider').flexslider({ 
+	$('.flexslider').flexslider({
 		animation: "slide",
 		slideshow: false,
 		controlNav: "thumbnails",
@@ -52,49 +52,42 @@ $(document).ready(function(){
 		$('.js-select').removeClass('is-open');
 	});
 
-	$(".js-send-table").click(function() {
-		$('.js-table').slideToggle( "fast", function() {});
-		return false;
-	});
-
-	$(".js-data-type .calc__typeitem").click(function() {
-		$(this).addClass('is-active').siblings().removeClass('is-active');
-
-		var attr = $(this).attr('data-type');
-		$(".js-hidden-input").val(attr);
-	});
-
-//tab
-function tab() {
-	$(".js-tab").each(function(){
-		var tab_link = $(this).find("a");
-		var tab_item = $(this).find("li");
-		var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
-		tab_cont.hide();
-		tab_item.first().addClass("is-active");
-		$(this).parents(".js-tab-group").find(".js-tab1").show();
-		tab_link.on("click", function() {
-			var index = $(this).attr("href");
-			tab_item.removeClass("is-active");
-			$(this).parent().addClass("is-active");
+	//tab
+	function tab() {
+		$(".js-tab").each(function(){
+			var tab_link = $(this).find("a");
+			var tab_item = $(this).find("li");
+			var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
 			tab_cont.hide();
-			$(this).parents(".js-tab-group").find("."+index).show();
-			return false;
-		});
-		});
-} tab();
+			tab_item.first().addClass("is-active");
+			$(this).parents(".js-tab-group").find(".js-tab1").show();
+			tab_link.on("click", function() {
+				var index = $(this).attr("href");
+				tab_item.removeClass("is-active");
+				$(this).parent().addClass("is-active");
+				tab_cont.hide();
+				$(this).parents(".js-tab-group").find("."+index).show();
+				return false;
+			});
+			});
+	} tab();
 
-// sticky footer
-$(function() {
-    var footerHeight = $(".footer-wrap").height();
-    $(".out").css("margin-bottom", -footerHeight);
-    $(".push").css("height", footerHeight);
-});
+	// sticky footer
+	$(function() {
+		var footerHeight = $(".footer-wrap").height();
+		$(".out").css("margin-bottom", -footerHeight);
+		$(".push").css("height", footerHeight);
+	});
 
-$(window).resize(function() {
-    var footerHeight = $(".footer-wrap").height();
-    $(".out").css("margin-bottom", -footerHeight);
-    $(".push").css("height", footerHeight);
-});
+	$(window).resize(function() {
+		var footerHeight = $(".footer-wrap").height();
+		$(".out").css("margin-bottom", -footerHeight);
+		$(".push").css("height", footerHeight);
+	});
+
+	// Init price calculator
+	if (typeof priceCalculator == "object") {
+		priceCalculator.init();
+	}
 
 });

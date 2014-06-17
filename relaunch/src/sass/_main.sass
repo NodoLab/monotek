@@ -1,4 +1,4 @@
-// 
+//
 // --------------------------------------------------
 
 // calcwidget
@@ -20,7 +20,7 @@
 		margin-bottom: 12px
 		font-size: $size-l
 		font-family: $font-base
-		text-transform: uppercase 
+		text-transform: uppercase
 		color: #000
 	.calcwdg__input
 		width: 188px
@@ -54,7 +54,7 @@
 					border: 1px solid $gray
 					border-bottom-width: 0
 					position: relative
-					color: #000 
+					color: #000
 					&:after
 						content: ""
 						height: 1px
@@ -62,20 +62,20 @@
 						bottom: -1px
 						left: 0
 						right: 0
-						background: #fff 
+						background: #fff
 	.tab__link
 		padding: 7px 18px
 		+border-radius(3px 3px 0 0)
 		border: 1px solid #ececec
 		border-bottom-width: 0
 		display: block
-		font-size: $size-m 
+		font-size: $size-m
 		text-transform: uppercase
 		font-family: $font-bold
 		color: $gray
 		text-decoration: none
 		&:hover
-			color: $gray-dark 
+			color: $gray-dark
 	.tab__item
 		padding: 18px 20px
 		border: 1px solid $gray
@@ -85,6 +85,7 @@
 .gallerywdg
 	.gallerywdg__title
 		margin-bottom: $size-s
+		font-size: 18px
 	.gallerywdg__btn
 		margin-top: 5px
 	.gallerywdg__items
@@ -92,7 +93,7 @@
 		.tab__item &
 			padding: 0
 	.gallerywdg__item
-		margin-left: 9px 
+		margin-left: 9px
 		margin-bottom: 10px
 		float: left
 		text-align: center
@@ -182,7 +183,7 @@
 		overflow: hidden
 		img
 			max-width: 100%
-			display: block 
+			display: block
 	.special__content
 		padding: 15px 20px
 		background: #FFE400
@@ -212,7 +213,7 @@
 		margin: 0 -2px
 		height: 422px
 		overflow: hidden
-		+border-radius(3px 3px 0 0) 
+		+border-radius(3px 3px 0 0)
 		img
 			width: 100%
 			display: block
@@ -220,7 +221,7 @@
 		// border: 1px solid #d2d2d2
 		// border-top-width: 0
 		padding: 15px 18px 0
-		+border-radius(0 0 3px 3px) 
+		+border-radius(0 0 3px 3px)
 	.slider__nav
 		text-align: center
 	.slider__prev, .slider__next
@@ -251,113 +252,6 @@
 			&:first-child
 				margin-left: 0
 
-// .calc
-// --------------------------------------------------
-.calc
-	margin-bottom: 25px
-	.calc__sq
-		height: 70px
-		padding-top: 24px
-		padding-bottom: 10px
-		padding-left: 12px
-		padding-right: 12px
-		border-top: 1px solid #d7d7d7 
-		border-bottom: 1px solid #d7d7d7
-	.calc__sqin
-		position: relative
-		margin-bottom: 10px
-	.calc__sqmeta
-		width: 110px
-		margin-right: 47px
-		display: inline-block
-		vertical-align: middle
-		margin-bottom: 0
-	.calc__sqinput
-		width: 464px
-		display: inline-block
-		vertical-align: middle
-	.calc__type
-		padding: 30px 0
-		border-bottom: 1px solid #d7d7d7
-		+clr
-		&.calc__type_select
-			position: relative
-			padding: 0
-			.calc__typeitem
-				position: relative
-				.calc__typedescr
-					margin-top: 30px
-			.calc__typeitem
-				&:after
-					content: ""
-					// +s(select)
-					position: absolute
-					top: 20px
-					left: 50%
-					margin-left: -34px
-	.calc__typemeta
-		width: 145px
-		padding-left: 12px
-		height: 181px
-		line-height: 181px
-		margin-bottom: 0
-		float: left
-	.calc__typeitems
-		overflow: hidden
-		+clr
-	.calc__typeitem
-		width: 170px
-		float: left
-		text-align: center
-		&.is-active
-			position: relative
-			&:after
-				content: ""
-				+s(select_a)
-				position: absolute
-				top: 25px
-				left: 50%
-				margin-left: -32px
-		.calc__typemedia
-			cursor: pointer
-		.title-strong
-			margin-bottom: 0
-	.calc__typemedia
-		width: 126px
-		height: 134px
-		margin-left: auto
-		margin-right: auto
-		img
-			max-width: 100%
-			max-height: 100%
-	input.calc__typemedia
-		height: 75px
-		width: 75px
-		position: relative
-		top: 20px
-		z-index: 1000
-		cursor: pointer
-		+opacity(0)
-	input.calc__typemedia + .calc__typemediaico
-		+s(select)
-		position: absolute
-		top: 20px
-		left: 50%
-		margin-left: -38px
-		cursor: pointer
-	input.calc__typemedia:checked + .calc__typemediaico
-		&:after
-			content: ""
-			position: absolute
-			top: 5px
-			left: 5px
-			+s(select_a)
-	.calc__typedescr
-		color: $gray-dark
-		padding: 0 10px
-	.calc__btn
-		margin-top: 20px
-		
 // contactus
 // --------------------------------------------------
 .contactus
@@ -409,7 +303,7 @@
 	+clr
 	.contact__top
 		margin-bottom: 10px
-	.contact__box 
+	.contact__box
 		margin-bottom: 25px
 	.contact__left
 		width: 380px
@@ -432,16 +326,16 @@
 // --------------------------------------------------
 .form
 	padding-top: 20px
-	border-top: 1px solid #d7d7d7 
+	border-top: 1px solid #d7d7d7
 	.form__row
 		height: 74px
 		line-height: 74px
-		border-top: 1px solid #d7d7d7 
+		border-top: 1px solid #d7d7d7
 		+clr
 		&:first-child
 			border-top-color: transparent
 		&.form__row_noborder
-			border-top-color: transparent 
+			border-top-color: transparent
 	.form__row_mod
 		height: auto
 		line-height: 1.35
@@ -461,4 +355,3 @@
 	.textarea
 		border-color: #a1a1a1
 
-		

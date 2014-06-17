@@ -8,6 +8,7 @@
 					src: [
 						'src/js/libs/*.js',
 						'src/js/plugins/*.js',
+						'src/js/app/*.js',
 						'src/js/common.js'
 					],
 					dest: 'build/js/scripts.js'
@@ -44,22 +45,22 @@
 			},
 
 			compass: {
-				dev: {
+				build: {
 					options: {
 						httpGeneratedImagesPath: '../img/',
 						sassDir: 'src/sass',
 						cssDir: 'build/css',
 						imagesDir: 'src/img',
-                    	outputStyle: 'expanded'
+						outputStyle: 'expanded'
 					}
 				},
-				dist: {
+				force: {
 					options: {
 						httpGeneratedImagesPath: '../img/',
 						sassDir: 'src/sass',
 						cssDir: 'build/css',
 						imagesDir: 'src/img',
-                    	outputStyle: 'expanded',
+						outputStyle: 'expanded',
 						force: true
 					}
 				}
@@ -104,8 +105,12 @@
 
 			watch: {
 				img: {
-					files: ["src/img/**"],
+					files: ["src/img/**", "!src/img/icons/**"],
 					tasks: ['img']
+				},
+				icons: {
+					files: ["src/img/icons/**"],
+					tasks: ['css', 'img']
 				},
 				html: {
 					files: ["src/html/**"],
@@ -124,7 +129,7 @@
 					tasks: ['js']
 				},
 				css: {
-					files: ["src/css/**"],
+					files: ["src/css/**", "src/sass/**"],
 					tasks: ['css']
 				}
 			}
@@ -133,18 +138,20 @@
 
 		require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
-		grunt.registerTask('html',		['clean:html', 'includereplace', 'clean:htmlincludes']);
-		grunt.registerTask('css', 		['clean:css', 'compass:dev', 'img']);
-		grunt.registerTask('css-dist',	['clean:css', 'compass:dist', 'cssmin', 'img']);
-		grunt.registerTask('fonts',		['clean:fonts', 'copy:fonts']);
-		grunt.registerTask('img',		['clean:img', 'copy:img']);
-		grunt.registerTask('js',		['clean:js', 'concat:js']);
-		grunt.registerTask('js-dist',	['clean:js', 'uglify']);
-		grunt.registerTask('features',	['clean:features', 'copy:features']);
+		grunt.registerTask('html',			['clean:html', 'includereplace', 'clean:htmlincludes']);
+		grunt.registerTask('css', 			['clean:css', 'compass:build', 'img']);
+		grunt.registerTask('css-dist',		['clean:css', 'compass:build', 'cssmin', 'img']);
+		grunt.registerTask('css-force',		['clean:css', 'compass:force', 'cssmin', 'img']);
+		grunt.registerTask('fonts',			['clean:fonts', 'copy:fonts']);
+		grunt.registerTask('img',			['clean:img', 'copy:img']);
+		grunt.registerTask('js',			['clean:js', 'concat:js']);
+		grunt.registerTask('js-dist',		['clean:js', 'uglify']);
+		grunt.registerTask('features',		['clean:features', 'copy:features']);
 
-		grunt.registerTask('dev', ['html', 'css', 'fonts', 'img', 'js', 'features']);
-		grunt.registerTask('dist', ['html', 'css-dist', 'fonts', 'img', 'js-dist', 'features']);
-		grunt.registerTask('default', ['dist']);
+		grunt.registerTask('dev',			['html', 'css', 'fonts', 'img', 'js', 'features']);
+		grunt.registerTask('dist',			['html', 'css-dist', 'fonts', 'img', 'js-dist', 'features']);
+		grunt.registerTask('dist-force',	['html', 'css-force', 'fonts', 'img', 'js-dist', 'features']);
+		grunt.registerTask('default',		['watch']);
 
 	};
 

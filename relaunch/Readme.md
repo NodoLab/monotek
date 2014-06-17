@@ -8,10 +8,13 @@ Grunt Commands
 
 # Production Build
 
-	grunt
+Build the project:
+
 	grunt dist
 
-Notice that production build also forces builing of the sprites
+Build the project and force the sprites to be regenerated:
+
+	grunt dist-force
 
 # Development Build
 
@@ -22,6 +25,7 @@ Notice that production build also forces builing of the sprites
 	grunt html
 	grunt css
 	grunt css-dist
+	grunt css-force
 	grunt fonts
 	grunt img
 	grunt js
