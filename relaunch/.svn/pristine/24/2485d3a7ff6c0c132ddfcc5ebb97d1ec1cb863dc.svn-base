@@ -4,19 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="../css/jquery.fancybox.css">
 	<link rel="stylesheet" media="screen" href="../css/style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 <body>
-<div class="out">
-	<div class="header header_small">
-		<div class="header__img" style="background-image: url(../img/content/header_index_small.jpg); height: 202px;"></div>
+<div class="out"> 
+	<div class="header header_contact">
+		<div class="header__map">
+			<div id="map"></div>
+			<div class="contact__marker" data-lat="55.710864" data-lng="37.656329" data-title="СК-МОНОТЕК">
+				<div class="contact__bubble">
+					<h3>СК-МОНОТЕК</h3>
+					<p>ул. Ленинградская слобода 26</p>
+					<p>6 этаж</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- /.header -->
-	 <div class="page">
+	<div class="page">
 	 	<div class="main container">
 	 		<div class="l">
 	 			<div class="l-sidebar">
-	 				 <div class="sidebar is-active">
+	 				 <div class="sidebar sidebar_map">
  	<a href="#" class="logo"></a>
  	<div class="nav">
  		<ul>
@@ -34,7 +46,7 @@
  				</ul>
  			</li>
  			<li><a href="#">Бонусная программа</a></li>
- 			<li><a href="#" class="is-active">Калькулятор ремонта</a></li>
+ 			<li><a href="#" class="sidebar_map">Калькулятор ремонта</a></li>
  			<li><a href="#">Контакты</a></li>
  		</ul>
  	</div>
@@ -65,118 +77,84 @@
 						<li><a href="#">СК-МОНОТЕК</a></li>
 						<li><a href="#">Калькулятор ремонта</a></li>
 					</ul>
-					<h1 class="h1">Калькулятор ремонта</h1>
-					<div class="js-price-calculator">
-
-	<div class="calc">
-
-		<div class="calc__sq">
-			<div class="calc__sqin">
-				<div class="calc__sqmeta title-strong">Площадь помещения</div>
-				<input type="text" name="area" class="calc__sqinput input" placeholder="Площадь помещения, м2">
-			</div>
-		</div>
-
-		<div class="calc__row-housetype">
-			<input type="hidden" name="housetype" value="" />
-			<div class="calc__typemeta">Тип дома</div>
-			<div class="calc__typeitems">
-				<div class="calc__typeitem" data-value="1">
-					<div class="calc__housetype-wood"></div>
-					<div class="calc__typedescr">Старый дом с деревянными перекрытиями</div>
-				</div>
-				<div class="calc__typeitem" data-value="2">
-					<div class="calc__housetype-concrete"></div>
-					<div class="calc__typedescr">Старый дом с железобетонными перекрытиями</div>
-				</div>
-				<div class="calc__typeitem" data-value="3">
-					<div class="calc__housetype-brick"></div>
-					<div class="calc__typedescr">Новый панельный, монолитный или кирпичный дом</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="calc__row-renewtype">
-			<input type="hidden" name="renewtype" value="" />
-			<div class="calc__typemeta">Тип ремонта</div>
-			<div class="calc__typeitems">
-				<div class="calc__typeitem" data-value="1">
-					<div class="calc__renewtype"></div>
-					<div class="calc__typedescr">
-						<div class="calc__title">Бизнес-класс</div>
-						<p>Краткое описание</p>
+					<div class="page-title">
+						<h1 class="h1">Калькулятор ремонта</h1>
 					</div>
-				</div>
-				<div class="calc__typeitem" data-value="2">
-					<div class="calc__renewtype"></div>
-					<div class="calc__typedescr">
-						<div class="calc__title">Элит-класс</div>
-						<p>Краткое описание</p>
+					<div class="contact">
+						<div class="contact__left">
+							<div class="contactus contactus_mod">
+								<div class="contactus__label1">
+									<a href="calto:+7 (967) 005-14-41" class="h2 contactus__title">+7 (967) 005-14-41</a>
+									<div class="title-strong">Позвоните нам прямо сейчас</div>
+									<p>Ежедневно с 9:00 до 18:00</p>
+								</div>
+								<div class="contactus__label_noimg">
+									<p class="lead">Другой телефон</p>
+									<a href="callto:+7 (968) 472-40-87" class="title-strong">+7 (968) 472-40-87</a>
+								</div>
+								<div class="contactus__label2">
+									<h2 class="h2 contactus__title">Звонок с сайта</h2>
+									<div class="title-strong">Бесплатно</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__right">
+							<div class="contact__top"><p class="lead">Адрес</p></div>
+							<div class="contact__box">
+								<p>115280, г.Москва</p>
+								<p>ул. Ленинская слобода,</p>
+								<p>д. 26, оф. 305</p>
+								<p>ООО "СК-МОНОТЕК"</p>
+							</div>
+							<div class="contact__box">
+								<div class="contact__top"><p class="lead">Адрес</p></div>
+								<a href="mailto:info@sk-monotek.ru">info@sk-monotek.ru</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="calc__typeitem" data-value="3">
-					<div class="calc__renewtype"></div>
-					<div class="calc__typedescr">
-						<div class="calc__title">Эксклюзив</div>
-						<p>Краткое описание</p>
+					<div class="form">
+						<h2 class="h2">Отправьте нам сообщение прямо сейчас</h2>
+						<div class="form__row form__row_noborder">
+							<div class="form__left">
+								<span>Имя</span>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__left">
+								<span>Телефон</span>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__left">
+								<span>Электронная почта</span>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+							</div>
+						</div>
+						<div class="form__row form__row_mod">
+							<div class="form__left">
+								<span>Сообщение</span>
+							</div>
+							<div class="form__right">
+								<textarea class="textarea"></textarea>
+							</div>
+						</div>
+						<div class="form__row form__row_mod">
+							<div class="form__left"></div>
+							<div class="form__right"><a href="#" class="btn">отправить</a></div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<a href="#" class="calc__btn btn js-calculate">Рассчитать</a>
-
-	</div>
-	<!-- /.calc -->
-
-	<div class="js-calculator-result" style="display:none;">
-		<div class="calc__result">
-			<h2>Стоимость ремонта</h2>
-			<table class="table">
-				<tbody>
-					<tr>
-						<td>Площадь помещения</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>Тип дома</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>Тип ремонта</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>Стоимость работ</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>Стоимость отделочных материалов</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td class="calc__total">Итого</td>
-						<td class="calc__total">-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="contactus">
-			<div class="contactus__label1">
-				<a href="calto:+7 (967) 005-14-41" class="h2 contactus__title">+7 (967) 005-14-41</a>
-				<div class="title-strong">Позвоните нам прямо сейчас</div>
-			</div>
-			<div class="contactus__label2">
-				<h2 class="h2 contactus__title">Звонок с сайта</h2>
-				<div class="title-strong">Бесплатно</div>
-			</div>
-		</div>
-	</div>
-</div>
 	 			</div>
 	 		</div>
 	 	</div>
-	 </div>
+	</div>
 	<!-- /.page -->
 
 	<div class="push"></div>

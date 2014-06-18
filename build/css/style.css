@@ -1375,6 +1375,7 @@ p + table {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  border: 1px solid #a1a1a1;
   resize: vertical;
   font-size: 13px;
   font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1401,23 +1402,23 @@ p + table {
   color: #797979;
 }
 
-/* line 127, ../../src/sass/_forms.sass */
+/* line 128, ../../src/sass/_forms.sass */
 .checkbox {
   position: relative;
   cursor: pointer;
 }
-/* line 132, ../../src/sass/_forms.sass */
+/* line 133, ../../src/sass/_forms.sass */
 .checkbox:hover input + span .checkbox__ico {
   background-position: 0 -1375px;
 }
-/* line 134, ../../src/sass/_forms.sass */
+/* line 135, ../../src/sass/_forms.sass */
 .checkbox span {
   padding-left: 27px;
   font-size: 14px;
   font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #333333;
 }
-/* line 139, ../../src/sass/_forms.sass */
+/* line 140, ../../src/sass/_forms.sass */
 .checkbox input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1425,7 +1426,7 @@ p + table {
   left: 0;
   top: 0;
 }
-/* line 145, ../../src/sass/_forms.sass */
+/* line 146, ../../src/sass/_forms.sass */
 .checkbox input + span .checkbox__ico {
   position: absolute;
   top: 0px;
@@ -1434,28 +1435,28 @@ p + table {
   width: 18px;
   height: 18px;
 }
-/* line 151, ../../src/sass/_forms.sass */
+/* line 152, ../../src/sass/_forms.sass */
 .checkbox input:checked + span .checkbox__ico {
   background-position: 0 -1347px;
 }
 
-/* line 156, ../../src/sass/_forms.sass */
+/* line 157, ../../src/sass/_forms.sass */
 .radio {
   position: relative;
   cursor: pointer;
 }
-/* line 161, ../../src/sass/_forms.sass */
+/* line 162, ../../src/sass/_forms.sass */
 .radio:hover input + span .radio__ico {
   background-position: 0 -1094px;
 }
-/* line 163, ../../src/sass/_forms.sass */
+/* line 164, ../../src/sass/_forms.sass */
 .radio span {
   padding-left: 27px;
   font-size: 14px;
   font-family: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #333333;
 }
-/* line 168, ../../src/sass/_forms.sass */
+/* line 169, ../../src/sass/_forms.sass */
 .radio input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1463,7 +1464,7 @@ p + table {
   left: 0;
   top: 0;
 }
-/* line 174, ../../src/sass/_forms.sass */
+/* line 175, ../../src/sass/_forms.sass */
 .radio input + span .radio__ico {
   position: absolute;
   top: 0px;
@@ -1472,7 +1473,7 @@ p + table {
   width: 18px;
   height: 18px;
 }
-/* line 180, ../../src/sass/_forms.sass */
+/* line 181, ../../src/sass/_forms.sass */
 .radio input:checked + span .radio__ico {
   background-position: 0 -1122px;
 }
@@ -2657,12 +2658,8 @@ p + table {
 .form .input, .form .textarea {
   width: 460px;
 }
-/* line 364, ../../src/sass/_main.sass */
-.form .textarea {
-  border-color: #a1a1a1;
-}
 
-/* line 367, ../../src/sass/_main.sass */
+/* line 365, ../../src/sass/_main.sass */
 #map {
   height: 428px;
 }
