@@ -10,56 +10,14 @@
 <body>
 <div class="out">
 	<div class="header">
-		<div class="header__img" style="background-image: url(../img/content/header_index.jpg); height: 428px;"></div>
+		<img src="../img/content/header_index.jpg" alt="">
 	</div>
 	<!-- /.header -->
 	<div class="page page_index">
 		<div class="main container">
 			<div class="l">
 				<div class="l-sidebar">
-					 <div class="sidebar sidebar_index">
- 	<a href="#" class="logo"></a>
- 	<div class="nav">
- 		<ul>
- 			<li><a href="#">Главная</a></li>
- 			<li><a href="#">О компании</a></li>
- 			<li><a href="#">Услуги и цены</a></li>
- 			<li><a href="#">Важно знать</a></li>
- 			<li class="has-dropnav">
- 				<a href="#" class="is-active">Галерея</a>
- 				<ul class="dropnav">
- 					<li><a href="#">Все работы</a></li>
- 					<li><a href="#" class="is-current">Квартиры</a></li>
- 					<li><a href="#">Коттеджи</a></li>
- 					<li><a href="#">Офисы</a></li>
- 				</ul>
- 			</li>
- 			<li><a href="#">Бонусная программа</a></li>
- 			<li><a href="#" class="sidebar_index">Калькулятор ремонта</a></li>
- 			<li><a href="#">Контакты</a></li>
- 		</ul>
- 	</div>
- 	<div class="sidebar__row sidebar__row_tel">
- 		<div class="telephone telephone_sidebar">
- 			<div>Телефон в Москве</div>
- 			<div class="telephone__num"><a href="callto:+7 (967) 005-14-47">+7 (967) 005-14-47 </a></div>
- 		</div>
- 	</div>
- 	<div class="sidebar__row">
- 		<div class="sidebar__rowlabel">
- 			<div class="sidebar__rowdescr">Адес и схема проезда</div>
- 			<a href="#" class="btn btn_map">открыть карту</a>
- 		</div>
- 	</div>
- 	<div class="sidebar__row">
- 		<div class="sidebar__rowlabel">
- 			<div class="sidebar__rowdescr">Бесплатный звонок с сайта</div>
- 			<a href="#" class="btn btn_call">позвонить</a>
- 		</div>
- 	</div>
- </div>
-<!-- /.sidebar -->
-
+					@@include('_sidebar.html', {"mod": "sidebar_index"})
 				</div>
 				<div class="l-main">
 					<div class="l">
@@ -223,51 +181,7 @@
 	<!-- /.push -->
 </div>
 <!-- /.out -->
-<div class="footer-wrap">
-	<div class="footer">
-		<div class="container">
-			<div class="footer__items">
-				<div class="footer__item">
-					<div class="footer__row">
-						<div class="footer__rowlabel1">Пишите</div>
-						<div class="footer__rowlabel2"><a href="mailto:info@sk-monotek.ru" class="footer__link">info@sk-monotek.ru</a></div>
-					</div>
-					<div class="footer__label">
-						<a href="#" class="btn-muted">Форма обратной связи</a>
-					</div>
-				</div>
-				<div class="footer__item">
-					<div class="footer__row">
-						<div class="footer__rowlabel1">Звоните</div>
-						<div class="footer__rowlabel2">
-							<a href="callto:+7 (967) 005-14-47" class="footer__link">+7 (967) 005-14-47</a>
-							<a href="callto:+7 (967) 005-14-47" class="footer__link">+7 (967) 005-14-47</a>
-						</div>
-					</div>
-					<div class="footer__label">
-						<a href="#" class="btn-muted">Другие телефоны</a>
-					</div>
-				</div>
-				<div class="footer__item">
-					<div class="footer__row">
-						<div class="footer__rowlabel1">Приезжайте</div>
-						<div class="footer__rowlabel2">
-							<div class="footer__addr">Москва, ул. Ленинская слобода,</div>
-							<div class="footer__addr">д. 26 стр. 2, оф. 10</div>
-						</div>
-					</div>
-					<div class="footer__label">
-						<a href="#" class="btn-muted">Схема проезда</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="copyright container">
-		<p>Copyright 2014 © СК-МОНОТЕК</p>
-	</div>
-</div>
-<!-- /.footer -->
+@@include('_footer.html')
 
 <script src="../js/scripts.js"></script>
 </body>

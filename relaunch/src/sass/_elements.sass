@@ -83,20 +83,34 @@ h6, .h6
 	font-size: $size-h6
 	line-height: 1.231
 	
-.title
+.title, a.title
 	font-size: $size-title
 	font-family: $font-bold 
 	text-transform: uppercase
 	text-decoration: none
 	color: #000
+	a
+		font-size: $size-title
+		font-family: $font-bold 
+		text-transform: uppercase
+		text-decoration: none
+		color: #000
 	
-.title-special
+.title-special, a.title-special
 	margin-bottom: 10px
 	font-size: $size-h6
 	font-family: $font-bold
 	line-height: 1.2 
 	text-transform: uppercase
 	color: #000
+	a
+		font-size: $size-h6
+		font-family: $font-bold
+		line-height: 1.2 
+		text-transform: uppercase
+		text-decoration: none
+		color: #000
+
 .title-strong
 	margin-bottom: 10px
 	font-size: 21px
@@ -248,11 +262,18 @@ blockquote,
 		&:after
 			top: 10px
 	&.btn-muted_mod
+		height: 24px
+		line-height: 24px
 		border-color: $gray-dark
+		&:after
+			top: 8px
 		&:hover
 			background: #FFED52
 		&:active
+			line-height: 26px
 			+box-shadow(inset 0px 1px 0 #ccbe42)
+			&:after
+				top: 9px
 // Grid
 // --------------------------------------------------
 %in

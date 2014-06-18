@@ -62,7 +62,7 @@ $(document).ready(function(){
 			tab_item.first().addClass("is-active");
 			$(this).parents(".js-tab-group").find(".js-tab1").show();
 			tab_link.on("click", function() {
-				var index = $(this).attr("href");
+				var index = $(this).attr("rel");
 				tab_item.removeClass("is-active");
 				$(this).parent().addClass("is-active");
 				tab_cont.hide();

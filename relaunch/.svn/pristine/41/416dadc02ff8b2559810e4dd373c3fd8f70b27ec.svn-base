@@ -7,7 +7,6 @@ html, body
 	height: 100%
 
 body
-	min-width: 980px 
 	font-family: $font-base
 	font-size: $size-base
 	color: $color-base

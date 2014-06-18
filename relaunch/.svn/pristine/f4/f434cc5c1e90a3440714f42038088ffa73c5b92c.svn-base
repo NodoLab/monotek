@@ -196,6 +196,8 @@
 	.special__title
 		margin-bottom: 8px
 	.btn-muted
+		padding-top: 4px
+		padding-bottom: 2px
 		margin-top: 8px
 		display: inline-block
 
@@ -208,10 +210,8 @@
 	border: 1px solid #d2d2d2
 	border-top-width: 0
 	overflow: hidden
-	+gpu
 	.slider__item
 		width: 100%
-		+gpu
 	.slider__media
 		width: 674px
 		margin: 0 -2px
@@ -358,7 +358,4 @@
 		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.3))
 	.textarea
 		border-color: #a1a1a1
-
-#map
-	height: 428px
 
