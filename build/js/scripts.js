@@ -7143,4 +7143,17 @@ $(document).ready(function(){
 		priceCalculator.init();
 	}
 
+	$(document.documentElement).keyup(function (e) {
+	  if (e.keyCode == 39)
+	  {        
+	    $('.slider .cycle-slideshow').cycle('next');
+	  }
+
+	  if (e.keyCode == 37)
+	  {
+	    $('.slider .cycle-slideshow').cycle('prev');
+	  }
+	});
+
 });
+

@@ -1,0 +1,36 @@
+// contact
+// --------------------------------------------------
+.contact
+	margin-bottom: 35px
+	+clr
+	.contact__top
+		margin-bottom: 10px
+	.contact__box
+		margin-bottom: 25px
+	.contact__left
+		width: 380px
+		margin-right: $mr-base
+		float: left
+	.contact__right
+		width: 210px
+		padding-left: 40px
+		float: left
+		p
+			margin-bottom: 0
+		a
+			font-family: $font-base
+			font-size: $size-base
+			color: $color-base
+			line-height: 1.35
+			text-decoration: none
+
+.contact__marker
+	display: none
+
+.contact__bubble
+	padding: 10px
+	text-align: left
+	height: 80px
+	width: 300px
+	h1, h2, h3, h4, h5, h3, p
+		margin-bottom: 5px
