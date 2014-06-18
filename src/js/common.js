@@ -15,6 +15,18 @@ $(document).ready(function(){
 		selector: ".flexslider__slides > li",
 	});
 
+	$('.js-flexslider').flexslider({
+		namespace: "slider__",
+		animation: "slide",
+		selector: ".js-flexslider__in > .slider__item",
+		controlsContainer: "",
+		controlNav: true,
+		manualControls: ".asd li",
+		prevText: "",
+		nextText: "", 
+		slideshow: false
+	});
+
 	// select
 	function select() {
 		var el = $('.js-select');

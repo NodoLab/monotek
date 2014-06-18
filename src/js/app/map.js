@@ -1,38 +1,58 @@
-$(document).ready(function(){
+$(function(){
 
-  function initialize() {
-    var mapOptions = {
-      center: new google.maps.LatLng(55.710864, 37.656329),
-      zoom: 16
-    };
-    var map = new google.maps.Map(document.getElementById("map"),
-        mapOptions);
+	// Is there a map on this page?
+	var $map = $('#map');
+	if (!$map.length) {
+		return;
+	}
 
-    var myLatLng1 = new google.maps.LatLng(55.710864, 37.656329);
+	var centerLat,
+		centerLng,
+		defaultLat = 55.710864,
+		defaultLng = 37.656329;
 
+	// Get the markers
+	var $markers = $('.contact__marker');
 
-		var marker1 = new google.maps.Marker({
-		           position: myLatLng1,
-		           map: map,
-		           title: 'Uluru (Ayers Rock)'
-		     });
+	// Centermap on first marker found
+	if ($markers.length) {
+		centerLat = $markers.eq(0).data('lat');
+		centerLng = $markers.eq(0).data('lng');
+	} else {
+		centerLat = defaultLat;
+		centerLng = defaultLng;
+	}
 
-		var contentString1 = '<div style="width:200px;">'
-		       +'<p>ул. Ленинградская слобода 26</p>'
-		       +'<p>6 этаж</p>'
-		      '</div>';
+	var mapOptions = {
+		center: new google.maps.LatLng(defaultLat, defaultLng),
+		zoom: 16
+	};
 
-    var infowindow1 = new google.maps.InfoWindow({
-             content: contentString1
-         });
+	var gMap = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-		google.maps.event.addListener(marker1, 'click', function(){
-		         infowindow1.open(map,marker1);
-		     });
+	// Add markers to the map
+	$markers.each(function(index, item){
+		var $marker = $(item),
+			lat = $marker.data('lat'),
+			lng = $marker.data('lng'),
+			title = $marker.data('title'),
+			content = $marker.html();
 
-  }
-  if ($("#map").length > 0){
-     google.maps.event.addDomListener(window, 'load', initialize);
-  }
- 
+		var gLatLng = new google.maps.LatLng(lat, lng);
+		var gMarker = new google.maps.Marker({
+			position: gLatLng,
+			map: gMap,
+			title: title
+		});
+
+		var gInfoWindow = new google.maps.InfoWindow({
+			content: content
+		});
+
+		google.maps.event.addListener(gMarker, 'click', function(){
+			gInfoWindow.open(gMap, gMarker);
+		});
+
+	})
+
 });

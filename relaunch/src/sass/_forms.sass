@@ -16,9 +16,16 @@
 	+placeholder
 		font-family: $h-font
 		font-size: 14px
+	.lteie8 &
+		padding: 0 10px
+		height: 32px
+		line-height: 32px
 	&.input_small
 		height: 16px
 		font-size: $size-s
+		.lteie8 &
+			height: 24px
+			line-height: 24px
 		+placeholder
 			font-size: $size-s
 	&:focus
@@ -132,6 +139,8 @@
 		input + span
 			.checkbox__ico
 				+sp(i-checkbox_h)
+				.lteie8 &
+					display: none
 	span
 		padding-left: 27px
 		font-size: 14px
@@ -142,15 +151,22 @@
 		position: absolute
 		left: 0
 		top: 0
+		.lteie8 &
+			+opacity(1)
+			top: 3px
 	input + span
 		.checkbox__ico
 			position: absolute
 			top: 0px
 			left: 0px
 			+s(i-checkbox)
+			.lteie8 &
+				display: none
 	input:checked + span
 		.checkbox__ico
 			+sp(i-checkbox_a)
+			.lteie8 &
+				display: none
 
 // radio
 // --------------------------------------------------
@@ -161,6 +177,8 @@
 		input + span
 			.radio__ico
 				+sp(i-radio_h)
+				.lteie8 &
+					display: none
 	span
 		padding-left: 27px
 		font-size: 14px
@@ -171,14 +189,21 @@
 		position: absolute
 		left: 0
 		top: 0
+		.lteie8 &
+			+opacity(1)
+			top: 3px
 	input + span
 		.radio__ico
 			position: absolute
 			top: 0px
 			left: 0px
-			+s(i-radio)
+			+s(i-radio) 
+			.lteie8 &
+				display: none
 	input:checked + span
 		.radio__ico
 			+sp(i-radio_a)
+			.lteie8 &
+				display: none
 
 
