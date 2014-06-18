@@ -219,9 +219,6 @@
 	margin-bottom: -35px;
 	z-index: 8050;
 	text-align: center;
-	.lteie8 & {
-		width: 100% !important;
-	}
 }
 
 .fancybox-title-float-wrap .child {

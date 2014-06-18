@@ -151,7 +151,7 @@
 	z-index: 100
 	border-bottom: 1px solid #eaeaea
 	background: url(../img/icons/bonus_bg.png) 0 0 repeat
-	@include box-shadow(inset 0 0 4px rgba(0,0,0,.15))
+	@include box-shadow(inset 0 2px 3px rgba(0,0,0,0.1))
 	.bonus__items
 		padding-top: 30px
 		padding-bottom: 35px
@@ -198,6 +198,7 @@
 	.btn-muted
 		margin-top: 8px
 		display: inline-block
+		+ie-inline
 
 // slider
 // --------------------------------------------------
@@ -229,6 +230,7 @@
 		text-align: center
 	.slider__prev, .slider__next
 		display: inline-block
+		+ie-inline
 		vertical-align: middle
 		cursor: pointer
 		&.disabled
@@ -240,12 +242,14 @@
 	.slider__pagi
 		margin: 0 20px
 		display: inline-block
+		+ie-inline
 		span
 			width: 4px
 			height: 4px
 			+border-radius(50%)
 			border: 1px solid #474747
 			display: inline-block
+			+ie-inline
 			vertical-align: middle
 			font-size: 0
 			cursor: pointer
@@ -300,11 +304,39 @@
 	.contactus__title
 		margin-bottom: 0
 
+// contact
+// --------------------------------------------------
+.contact
+	margin-bottom: 35px
+	+clr
+	.contact__top
+		margin-bottom: 10px
+	.contact__box
+		margin-bottom: 25px
+	.contact__left
+		width: 380px
+		margin-right: $mr-base
+		float: left
+	.contact__right
+		width: 210px
+		padding-left: 40px
+		float: left
+		p
+			margin-bottom: 0
+		a
+			font-family: $font-base
+			font-size: $size-base
+			color: $color-base
+			line-height: 1.35
+			text-decoration: none
+
 // form
 // --------------------------------------------------
 .form
 	padding-top: 20px
 	border-top: 1px solid #d7d7d7
+	.h2
+		margin-bottom: 0
 	.form__row
 		height: 74px
 		line-height: 74px
@@ -329,7 +361,6 @@
 		float: left
 	.input, .textarea
 		width: 460px
-		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.3))
 	.textarea
 		border-color: #a1a1a1
 

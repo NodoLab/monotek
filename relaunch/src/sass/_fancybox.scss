@@ -219,10 +219,14 @@
 	margin-bottom: -35px;
 	z-index: 8050;
 	text-align: center;
+	.lteie8 & {
+		width: 100% !important;
+	}
 }
 
 .fancybox-title-float-wrap .child {
 	display: inline-block;
+	@include ie-inline;
 	margin-right: -100%;
 	padding: 2px 20px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
