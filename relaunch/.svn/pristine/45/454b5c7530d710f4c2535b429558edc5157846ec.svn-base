@@ -20,25 +20,13 @@ $(document).ready(function(){
 		smoothHeight: true,
 		animation: "slide",
 		selector: ".js-flexslider__in > .slider__item",
-		directionNav: false,
-		// controlsContainer: ".slider",
-		useCSS: false,
+		controlsContainer: "",
 		controlNav: true,
-		manualControls: ".slider__pagi li",
+		manualControls: ".asd li",
+		prevText: "",
+		nextText: "", 
 		slideshow: false
-
-
 	});
-
-	$('.slider__prev').on('click', function(){
-	    $('.js-flexslider').flexslider('prev')
-	    return false;
-	})
-
-	$('.slider__next').on('click', function(){
-	    $('.js-flexslider').flexslider('next')
-	    return false;
-	})
 
 	// select
 	function select() {

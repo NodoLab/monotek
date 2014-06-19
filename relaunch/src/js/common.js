@@ -15,6 +15,31 @@ $(document).ready(function(){
 		selector: ".flexslider__slides > li",
 	});
 
+	$('.js-flexslider').flexslider({
+		namespace: "slider__",
+		smoothHeight: true,
+		animation: "slide",
+		selector: ".js-flexslider__in > .slider__item",
+		directionNav: false,
+		// controlsContainer: ".slider",
+		useCSS: false,
+		controlNav: true,
+		manualControls: ".slider__pagi li",
+		slideshow: false
+
+
+	});
+
+	$('.slider__prev').on('click', function(){
+	    $('.js-flexslider').flexslider('prev')
+	    return false;
+	})
+
+	$('.slider__next').on('click', function(){
+	    $('.js-flexslider').flexslider('next')
+	    return false;
+	})
+
 	// select
 	function select() {
 		var el = $('.js-select');

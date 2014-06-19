@@ -2556,7 +2556,7 @@ p + table {
   *display: inline;
 }
 /* line 246, ../../src/sass/_main.sass */
-.slider .slider__pagi span {
+.slider .slider__pagi li {
   width: 4px;
   height: 4px;
   -webkit-border-radius: 50%;
@@ -2574,12 +2574,12 @@ p + table {
   margin-left: 10px;
 }
 /* line 257, ../../src/sass/_main.sass */
-.slider .slider__pagi span.cycle-pager-active {
+.slider .slider__pagi li.slider__active {
   background: #ffe400;
   border-color: #ffe400;
 }
 /* line 260, ../../src/sass/_main.sass */
-.slider .slider__pagi span:first-child {
+.slider .slider__pagi li:first-child {
   margin-left: 0;
 }
 
