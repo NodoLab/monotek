@@ -1,0 +1,215 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" media="screen" href="../css/style.css">
+</head>
+<body>
+<div class="out">
+	<div class="header header_small">
+		<div class="header__img" style="background-image: url(../img/content/header_index_small.jpg); height: 202px;"></div>
+	</div>
+	<!-- /.header -->
+	<div class="page">
+	 	<div class="main container">
+	 		<div class="l">
+	 			<div class="l-sidebar">
+	 				@@include('_sidebar.html', {"mod": ""})
+	 			</div>
+	 			<div class="l-main">
+					<ul class="breadcrumbs">
+						<li><a href="#">СК-МОНОТЕК</a></li>
+						<li><a href="#">Услуги и цены</a></li>
+					</ul>
+					<div class="l">
+						<div class="l-col1">
+							<h1 class="h1">С чего начинается ремонт</h1>
+							<p class="lead">Главный вопрос, который волнует каждого, кто  планирует начать ремонт: «С чего же лучше всего начать ремонт и какова будет его стоимость?».  Практически каждый будет согласен с тем, что все, что связано с ремонтом, следует распланировать еще до его начала. В этом случае шансы на успешное завершение работ значительно возрастают в отличие от ситуации, когда ремонт будет производиться спонтанно, без необходимой подготовки.</p>
+							<p>«СК-Монотек» поможет Вам определиться  с тем, что является необходимым именно в вашем случае, учитывая пожелания, возможности и стремления. Наши специалисты помогут разработать дизайн-проект, составить  сметную документацию, подобрать материалы и специалистов для проведения ремонтно-отделочных работ.</p>
+							<p>От вашего настроя и  нашего профессионального подхода к работе будут зависеть успешность выполнения ремонта и расход вложенных в него средств. Вам не нужно пугаться предстоящего ремонта, ведь в этой работе нет ничего такого, что было бы Нам не под силу. Воплотите свою мечту с нами.</p>
+						</div>
+						<div class="l-col2">
+							<div class="calcwdg">
+								<div class="calcwdg__meta">Калькулятор ремонта</div>
+								<input type="text" class="calcwdg__input input" placeholder="Площадь помещения, м2">
+								<a href="#" class="btn btn_calc">Продолжить расчет</a>
+							</div>
+							<div class="special">
+								<div class="special__media">
+									<img src="../img/content/special.jpg" alt="">
+								</div>
+								<div class="special__content">
+									<h6>Интересное предложение</h6>
+									<p>Узнавание бренда, пренебрегая деталями, переворачивает стиль менеджмента, опираясь на опыт западных коллег. </p>
+									<p><a href="#" class="btn-small-special">Подробнее</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab tab_content js-tab-group">
+						<ul class="tab__nav js-tab">
+						  <li class="is-active"><a href="#" class="tab__link" rel="js-tab1">Квартиры</a></li>
+						  <li><a href="#" class="tab__link" rel="js-tab2">Коттеджи</a></li>
+						  <li><a href="#" class="tab__link" rel="js-tab3">Офисы</a></li>
+						</ul>
+						<div class="tab__content">
+							<div class="tab__item js-tab-cont js-tab1">
+							  <p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия, повышая конкуренцию. К тому же искажает принцип восприятия, повышая конкуренцию.</p>
+							  <p>Эффективность действий естественно детерминирует экспериментальный фактор коммуникации, полагаясь на инсайдерскую информацию. Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. </p>
+							</div>
+							<div class="tab__item js-tab-cont js-tab2">
+							  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.lacerat eleifend leo.</p>
+							  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.lacerat eleifend leo.</p>
+							</div>
+							<div class="tab__item js-tab-cont js-tab3">
+							 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit am</p>
+							</div>
+						</div>
+					</div>
+					<div class="l">
+						<div class="l-col1">
+							<blockquote>
+								<p>Важно! Главный вопрос, который волнует каждого, кто  планирует начать ремонт: «С чего же лучше всего начать ремонт и какова будет его стоимость?».</p>
+								<p>Практически каждый будет согласен с тем.</p>
+							</blockquote>
+							<p>«СК-Монотек» поможет Вам определиться  с тем, что является необходимым именно в вашем случае, учитывая пожелания, возможности и стремления.</p>
+							<p>Наши специалисты помогут разработать дизайн-проект, составить  сметную документацию, подобрать материалы и специалистов для проведения ремонтно-отделочных работ.</p>
+							<hr class="hr">
+							<p>От вашего настроя и  нашего профессионального подхода к работе будут зависеть успешность выполнения ремонта и расход вложенных в него средств. Вам не нужно пугаться предстоящего ремонта, ведь в этой работе нет ничего такого, что было бы Нам не под силу. Воплотите свою мечту с нами.</p>
+							<p>От вашего настроя и  нашего профессионального подхода к работе будут зависеть успешность выполнения ремонта и расход вложенных в него средств. Вам не нужно пугаться предстоящего ремонта, ведь в этой работе нет ничего такого, что было бы Нам не под силу. Воплотите свою мечту с нами.</p>
+						</div>
+						<div class="l-col2">
+							<div class="special special_white">
+								<div class="special__media">
+									<img src="../img/content/special.jpg" alt="">
+								</div>
+								<div class="special__content">
+									<h6>Интересное предложение</h6>
+									<p>Узнавание бренда, пренебрегая деталями, переворачивает стиль менеджмента, опираясь на опыт западных коллег. </p>
+									<p><a href="#" class="btn-small">Подробнее</a></p>
+								</div>
+							</div>
+							<div class="special special_white">
+								<div class="special__content">
+									<h4>Интересное предложение</h4>
+									<p>Узнавание бренда, пренебрегая деталями, переворачивает стиль менеджмента, опираясь на опыт западных коллег. </p>
+									<p><a href="#" class="btn-small">Подробнее</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider js-test">
+					 	<div class="js-flexslider">
+					 		<div class="js-flexslider__in">
+					 			<div class="slider__item">
+					 				<div class="slider__media"><img src="../img/content/slider.jpg" alt=""></div>
+					 				<div class="slider__cont">
+					 					<p>1 Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 				</div>
+					 			</div>
+					 			<div class="slider__item">
+					 				<div class="slider__media"><img src="../img/content/slider.jpg" alt=""></div>
+					 				<div class="slider__cont">
+					 					<p>2 Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 				</div>
+					 			</div>
+					 			<div class="slider__item">
+					 				<div class="slider__media"><img src="../img/content/slider.jpg" alt=""></div>
+					 				<div class="slider__cont">
+					 					<p>3 Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 				</div>
+					 			</div>
+					 			<div class="slider__item">
+					 				<div class="slider__media"><img src="../img/content/slider.jpg" alt=""></div>
+					 				<div class="slider__cont">
+					 					<p>4 Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 					<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 				</div>
+					 			</div>
+					 			<div class="slider__item">
+					 				<div class="slider__media"><img src="../img/content/slider.jpg" alt=""></div>
+					 				<div class="slider__cont">
+					 					<p>1 Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</p>
+					 				</div>
+					 			</div>
+					 		</div>
+						</div>
+						<div class="slider__nav">
+							<div class="slider__prev"></div>
+							<ul class="slider__pagi">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="slider__next"></div>
+						</div>
+	 				</div>
+	 				<!-- /.slider -->
+
+	 				<h3>Файлы для скачивания</h3>
+					<ul class="uploads__list">
+						<li class="uploads__file">
+							<span class="uploads__filename">Прайс-лист</span>
+							<span class="uploads__description">Прайс-лист на услуги</span>
+							<div class="uploads__download">
+								<span class="uploads__filesize">17.5 K</span>
+								<a href="#" class="btn-small">Скачать</a>
+							</div>
+						</li>
+						<li class="uploads__file">
+							<span class="uploads__filename">Прайс-лист</span>
+							<span class="uploads__description">Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</span>
+							<div class="uploads__download">
+								<span class="uploads__filesize">17.5 K</span>
+								<a href="#" class="btn-small">Скачать</a>
+							</div>
+						</li>
+						<li class="uploads__file">
+							<span class="uploads__filename">Контекстная реклама транслирует креативный анализ зарубежного опыта</span>
+							<span class="uploads__description">Прайс-лист на услуги</span>
+							<div class="uploads__download">
+								<span class="uploads__filesize">17.5 K</span>
+								<a href="#" class="btn-small">Скачать</a>
+							</div>
+						</li>
+						<li class="uploads__file">
+							<span class="uploads__filename">Контекстная реклама транслирует креативный анализ зарубежного опыта</span>
+							<span class="uploads__description">Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия.</span>
+							<div class="uploads__download">
+								<span class="uploads__filesize">17.5 K</span>
+								<a href="#" class="btn-small">Скачать</a>
+							</div>
+						</li>
+						<li class="uploads__file">
+							<span class="uploads__filename">Контекстная реклама транслирует креативный анализ зарубежного опыта</span>
+							<div class="uploads__download">
+								<span class="uploads__filesize">17.5 K</span>
+								<a href="#" class="btn-small">Скачать</a>
+							</div>
+						</li>
+					</ul>
+
+	 			</div>
+	 		</div>
+	 	</div>
+	</div>
+	<!-- /.page -->
+
+	<div class="push"></div>
+	<!-- /.push -->
+</div>
+<!-- /.out -->
+@@include('_footer.html')
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" media="screen" href="../css/style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+<body>
+<div class="out">
+	<div class="header header_contact">
+		<div class="header__map">
+			<div id="map"></div>
+			<div class="contact__marker" data-lat="55.710864" data-lng="37.656329" data-title="СК-МОНОТЕК">
+				<div class="contact__bubble">
+					<h3>СК-МОНОТЕК</h3>
+					<p>ул. Ленинградская слобода 26</p>
+					<p>6 этаж</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.header -->
+	<div class="page">
+	 	<div class="main container">
+	 		<div class="l">
+	 			<div class="l-sidebar">
+	 				 <div class="sidebar sidebar_map">
+ 	<a href="#" class="logo"></a>
+ 	<div class="nav">
+ 		<ul>
+ 			<li><a href="#">Главная</a></li>
+ 			<li><a href="#">О компании</a></li>
+ 			<li><a href="#">Услуги и цены</a></li>
+ 			<li><a href="#">Важно знать</a></li>
+ 			<li class="has-dropnav">
+ 				<a href="#" class="is-active">Галерея</a>
+ 				<ul class="dropnav">
+ 					<li><a href="#">Все работы</a></li>
+ 					<li><a href="#" class="is-current">Квартиры</a></li>
+ 					<li><a href="#">Коттеджи</a></li>
+ 					<li><a href="#">Офисы</a></li>
+ 				</ul>
+ 			</li>
+ 			<li><a href="#">Бонусная программа</a></li>
+ 			<li><a href="#" class="sidebar_map">Калькулятор ремонта</a></li>
+ 			<li><a href="#">Контакты</a></li>
+ 		</ul>
+ 	</div>
+ 	<div class="sidebar__row sidebar__row_tel">
+ 		<div class="telephone telephone_sidebar">
+ 			<div>Телефон в Москве</div>
+ 			<div class="telephone__num"><a href="callto:+7 (967) 005-14-47">+7 (967) 005-14-47 </a></div>
+ 		</div>
+ 	</div>
+ 	<div class="sidebar__row">
+ 		<div class="sidebar__rowlabel">
+ 			<div class="sidebar__rowdescr">Адес и схема проезда</div>
+ 			<a href="#" class="btn btn_map">открыть карту</a>
+ 		</div>
+ 	</div>
+ 	<div class="sidebar__row">
+ 		<div class="sidebar__rowlabel">
+ 			<div class="sidebar__rowdescr">Бесплатный звонок с сайта</div>
+ 			<a href="#" class="btn btn_call">позвонить</a>
+ 		</div>
+ 	</div>
+ </div>
+<!-- /.sidebar -->
+
+	 			</div>
+	 			<div class="l-main">
+	 				<ul class="breadcrumbs">
+						<li><a href="#">СК-МОНОТЕК</a></li>
+						<li><a href="#">Калькулятор ремонта</a></li>
+					</ul>
+					<div class="page-title">
+						<h1 class="h1">Калькулятор ремонта</h1>
+					</div>
+					<div class="contact">
+						<div class="contact__left">
+							<div class="contactus contactus_mod">
+								<div class="contactus__label1">
+									<a href="calto:+7 (967) 005-14-41" class="h2 contactus__title">+7 (967) 005-14-41</a>
+									<div class="title-strong">Позвоните нам прямо сейчас</div>
+									<p>Ежедневно с 9:00 до 18:00</p>
+								</div>
+								<div class="contactus__label_noimg">
+									<p class="lead">Другой телефон</p>
+									<a href="callto:+7 (968) 472-40-87" class="title-strong">+7 (968) 472-40-87</a>
+								</div>
+								<div class="contactus__label2">
+									<h2 class="h2 contactus__title">Звонок с сайта</h2>
+									<div class="title-strong">Бесплатно</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__right">
+							<div class="contact__top"><p class="lead">Адрес</p></div>
+							<div class="contact__box">
+								<p>115280, г.Москва</p>
+								<p>ул. Ленинская слобода,</p>
+								<p>д. 26, оф. 305</p>
+								<p>ООО "СК-МОНОТЕК"</p>
+							</div>
+							<div class="contact__box">
+								<div class="contact__top"><p class="lead">Адрес</p></div>
+								<a href="mailto:info@sk-monotek.ru">info@sk-monotek.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="form">
+						<h2 class="h2">Отправьте нам сообщение прямо сейчас</h2>
+						<div class="form__row form__row_noborder">
+							<div class="form__left">
+								<span>Имя</span>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+								<div class="form__error">Это обязательное поле</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__left">
+								<span>Телефон</span>
+								<div class="form__error">Это обязательное поле</div>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__left">
+								<span>Электронная почта</span>
+							</div>
+							<div class="form__right">
+								<input type="text" class="input">
+							</div>
+						</div>
+						<div class="form__row form__row_mod">
+							<div class="form__left">
+								<span>Сообщение</span>
+							</div>
+							<div class="form__right">
+								<textarea class="textarea"></textarea>
+								<div class="form__error">Это обязательное поле</div>
+							</div>
+						</div>
+						<div class="form__row form__row_mod">
+							<div class="form__left"></div>
+							<div class="form__right"><a href="#" class="btn">отправить</a></div>
+						</div>
+					</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	</div>
+	<!-- /.page -->
+
+	<div class="push"></div>
+	<!-- /.push -->
+</div>
+<!-- /.out -->
+<div class="footer-wrap">
+	<div class="footer">
+		<div class="container">
+			<div class="footer__items">
+				<div class="footer__item">
+					<div class="footer__row">
+						<div class="footer__rowlabel1">Пишите</div>
+						<div class="footer__rowlabel2"><a href="mailto:info@sk-monotek.ru" class="footer__link">info@sk-monotek.ru</a></div>
+					</div>
+					<div class="footer__label">
+						<a href="#" class="btn-muted">Форма обратной связи</a>
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer__row">
+						<div class="footer__rowlabel1">Звоните</div>
+						<div class="footer__rowlabel2">
+							<a href="callto:+7 (967) 005-14-47" class="footer__link">+7 (967) 005-14-47</a>
+							<a href="callto:+7 (967) 005-14-47" class="footer__link">+7 (967) 005-14-47</a>
+						</div>
+					</div>
+					<div class="footer__label">
+						<a href="#" class="btn-muted">Другие телефоны</a>
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer__row">
+						<div class="footer__rowlabel1">Приезжайте</div>
+						<div class="footer__rowlabel2">
+							<div class="footer__addr">Москва, ул. Ленинская слобода,</div>
+							<div class="footer__addr">д. 26 стр. 2, оф. 10</div>
+						</div>
+					</div>
+					<div class="footer__label">
+						<a href="#" class="btn-muted">Схема проезда</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright container">
+		<p>Copyright 2014 © СК-МОНОТЕК</p>
+	</div>
+</div>
+<!-- /.footer -->
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -6043,6 +6043,7 @@ $(function(){
 
 	var mapOptions = {
 		center: new google.maps.LatLng(defaultLat, defaultLng),
+		scrollwheel: false,
 		zoom: 16
 	};
 
@@ -6331,7 +6332,7 @@ $(document).ready(function(){
 
 	$(document.documentElement).keyup(function (e) {
 	  if (e.keyCode == 39)
-	  {        
+	  {
 	    $('.slider .cycle-slideshow').cycle('next');
 	  }
 

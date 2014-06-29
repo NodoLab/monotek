@@ -1,0 +1,134 @@
+// Buttons
+// --------------------------------------------------
+%btn
+	height: 31px
+	line-height: 31px
+	padding-right: 31px
+	padding-left: 18px
+	background: $yellow
+	+border-radius($radius)
+	display: inline-block
+	+ie-inline
+	font-size: 16px
+	text-transform: uppercase
+	font-family: $font-bold
+	color: #000
+	text-decoration: none
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 11px
+		right: 16px
+		+s(i-arr)
+	&:hover
+		background: #FFED52
+	&:active
+		+box-shadow(inset 0px 1px 0 #e8d84b)
+		line-height: 32px
+		&:after
+			top: 12px
+
+.btn
+	@extend %btn
+	&.btn_map
+		padding-left: 35px
+		padding-right: 25px
+		&:after
+			+s(i-map)
+			left: 15px
+			right: auto
+			top: 7px
+	&.btn_call
+		padding-left: 35px
+		padding-right: 22px
+		&:after
+			+s(i-headphone)
+			left: 16px
+			right: auto
+			top: 9px
+	&.btn_forus
+		margin-top: 8px
+	&.btn_calc
+		padding-left: 18px
+		padding-right: 18px
+		display: block
+		&:after
+			right: 32px
+
+a.btn, input.btn, button.btn
+	display: inline-block
+	vertical-align: middle
+
+.btn_small, .btn-small
+	@extend %btn
+	height: 27px
+	line-height: 27px
+	padding-right: 20px
+	padding-left: 10px
+	font-size: $size-s
+	&:after
+		top: 9px
+		right: 10px
+	&:active
+		line-height: 28px
+		&:after
+			top: 10px
+			
+a.btn-small, input.btn-small, button.btn-small
+	display: inline-block
+	vertical-align: middle
+
+.btn-muted
+	height: 27px
+	line-height: 27px
+	padding-right: 19px
+	padding-left: 9px
+	display: inline-block
+	+ie-inline
+	background: transparent
+	border: 1px solid #a1a1a1
+	+border-radius($radius)
+	font-size: $size-s
+	text-transform: uppercase
+	font-family: $font-bold
+	color: #000
+	text-decoration: none
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 9px
+		right: 10px
+		+s(i-arr)
+	&:hover
+		background: #F6F6F6
+	&:active
+		line-height: 28px
+		+box-shadow(inset 0px 1px 0 #dddddd)
+		&:after
+			top: 10px
+
+a.btn-muted, input.btn-muted, button.btn-muted
+	display: inline-block
+	vertical-align: middle
+input.btn-muted, button.btn-muted
+	height: 29px
+	line-height: 27px
+	&:active
+		line-height: 28px
+
+.btn-small-special
+	@extend .btn-muted
+	height: 24px
+	line-height: 24px
+	border-color: $gray-dark
+	&:after
+		top: 8px
+	&:hover
+		background: #FFED52
+	&:active
+		line-height: 26px
+		+box-shadow(inset 0px 1px 0 #ccbe42)
+		&:after
+			top: 9px

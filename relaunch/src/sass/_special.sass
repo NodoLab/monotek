@@ -1,0 +1,31 @@
+// special
+// --------------------------------------------------
+.special
+	margin-bottom: $mr-sm
+	+border-radius($radius)
+	overflow: hidden
+	&.special_white
+		.special__content
+			background: #FFF
+			border: 1px solid #d2d2d2
+	.special__media
+		height: 157px
+		margin-bottom: -1px
+		overflow: hidden
+		img
+			max-width: 100%
+			display: block
+	.special__content
+		padding: 15px 20px
+		background: #FFE400
+		+border-radius(0 0 3px 3px)
+		font-size: $size-xs
+	h1, h2, h3, h4, h5, h6
+		@extend .title
+		font-weight: 400
+		margin-bottom: 8px
+	p:last-child
+		margin-bottom: 0
+	.btn-muted
+		display: inline-block
+		+ie-inline

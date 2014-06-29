@@ -1,0 +1,20 @@
+<div class="tab tab_content js-tab-group">
+	<ul class="tab__nav js-tab">
+		<li class="is-active"><a href="#" class="tab__link" rel="js-tab1">Квартиры</a></li>
+		<li><a href="#" class="tab__link" rel="js-tab2">Коттеджи</a></li>
+		<li><a href="#" class="tab__link" rel="js-tab3">Офисы</a></li>
+	</ul>
+	<div class="tab__content">
+		<div class="tab__item js-tab-cont js-tab1">
+			<p>Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. К тому же перераспределение бюджета реально искажает принцип восприятия, повышая конкуренцию. К тому же искажает принцип восприятия, повышая конкуренцию.</p>
+			<p>Эффективность действий естественно детерминирует экспериментальный фактор коммуникации, полагаясь на инсайдерскую информацию. Контекстная реклама транслирует креативный анализ зарубежного опыта, осознав маркетинг как часть производства. </p>
+		</div>
+		<div class="tab__item js-tab-cont js-tab2">
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.lacerat eleifend leo.</p>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.lacerat eleifend leo.</p>
+		</div>
+		<div class="tab__item js-tab-cont js-tab3">
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit am</p>
+		</div>
+	</div>
+</div>

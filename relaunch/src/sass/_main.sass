@@ -83,11 +83,14 @@
 // gallerywdg
 // --------------------------------------------------
 .gallerywdg
+	+clr
 	.gallerywdg__title
 		margin-bottom: $size-s
 		font-size: 18px
 	.gallerywdg__btn
 		margin-top: 5px
+		clear: both
+		float: left
 	.gallerywdg__items
 		margin-left: -10px
 		.tab__item &
@@ -170,35 +173,6 @@
 	.bonus__itemdescr
 		font-size: 13px
 		overflow: hidden
-
-// special
-// --------------------------------------------------
-.special
-	margin-bottom: $mr-sm
-	+border-radius($radius)
-	overflow: hidden
-	&.special_white
-		.special__content
-			background: #FFF
-			border: 1px solid #d2d2d2
-	.special__media
-		height: 157px
-		margin-bottom: -1px
-		overflow: hidden
-		img
-			max-width: 100%
-			display: block
-	.special__content
-		padding: 15px 20px
-		background: #FFE400
-		+border-radius(0 0 3px 3px)
-		font-size: $size-xs
-	.special__title
-		margin-bottom: 8px
-	.btn-muted
-		margin-top: 8px
-		display: inline-block
-		+ie-inline
 
 // slider
 // --------------------------------------------------
@@ -304,39 +278,11 @@
 	.contactus__title
 		margin-bottom: 0
 
-// contact
-// --------------------------------------------------
-.contact
-	margin-bottom: 35px
-	+clr
-	.contact__top
-		margin-bottom: 10px
-	.contact__box
-		margin-bottom: 25px
-	.contact__left
-		width: 380px
-		margin-right: $mr-base
-		float: left
-	.contact__right
-		width: 210px
-		padding-left: 40px
-		float: left
-		p
-			margin-bottom: 0
-		a
-			font-family: $font-base
-			font-size: $size-base
-			color: $color-base
-			line-height: 1.35
-			text-decoration: none
-
 // form
 // --------------------------------------------------
 .form
-	padding-top: 20px
-	border-top: 1px solid #d7d7d7
-	.h2
-		margin-bottom: 0
+	margin-top: -10px
+	padding-top: 0px
 	.form__row
 		height: 74px
 		line-height: 74px
@@ -346,6 +292,14 @@
 			border-top-color: transparent
 		&.form__row_noborder
 			border-top-color: transparent
+		&.is-error
+			height: auto
+			.form__error
+				display: block
+			.form__right_textarea
+				.form__error
+					margin-top: 5px
+					margin-bottom: -5px
 	.form__row_mod
 		height: auto
 		line-height: 1.35
@@ -353,6 +307,13 @@
 			padding: 30px 0
 		.form__right
 			padding: 20px 0
+	.form__error
+		display: none
+		line-height: 1
+		margin-top: -5px
+		margin-bottom: 15px
+		margin-left: 2px
+		color: #FF6B6B
 	.form__left
 		width: 190px
 		float: left

@@ -1,0 +1,200 @@
+//
+// --------------------------------------------------
+
+// Fonts
+// --------------------------------------------------
++font("Neuron", "neuron")
++font("Neuron Bold", "neuron-bold")
+
+$font-n: "Neuron", Arial, "Helvetica Neue", Helvetica, sans-serif
+$font-nb: "Neuron Bold", Arial, "Helvetica Neue", Helvetica, sans-serif
+$font-base: $font-n
+$font-bold: $font-nb
+
+// misc
+// --------------------------------------------------
+$radius: 3px
+$shadow: inset 0 1px 4px rgba(0,0,0,.3)
+$shadow-light: 0 1px 0 rgba(0,0,0,.1)
+
+$mr-base: 40px
+$mr-sm: 20px
+
+// Colors
+// --------------------------------------------------
+$yellow: #ffe400
+$gray: #a1a1a1
+$gray-dark: #333
+$gray-light: #d2d2d2
+
+//	Global text color on `<body>`.
+$color-base: $gray-dark
+//	Background color for `<body>`.
+$bg-base: #fff
+
+// Typography
+// --------------------------------------------------
+$size-l: 18px
+$size-m: 15px
+$size-s: 13px
+$size-xs: 12px
+$size-base: $size-m
+
+// Headings
+// --------------------------------------------------
+$size-h1: 32px
+$size-h2: 28px
+$size-h3: 24px
+$size-h6: 18px
+$size-title: 16px
+
+$h-font: $font-bold
+$h-font-alt: $font-base
+$h-font-weight: normal
+$h-color: #000
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h6, .h6
+	font-weight: $h-font-weight
+	color: $h-color
+
+h1, .h1,
+h2, .h2,
+h3, .h3
+	font-family: $h-font
+	line-height: 1
+
+h2, .h2,
+h3, .h3,
+h6, .h6
+	margin-bottom: 18px
+
+h1, .h1
+	font-size: $size-h1
+	margin-bottom: 20px
+h2, .h2
+	font-size: $size-h2
+h3, .h3
+	font-size: $size-h3
+h6, .h6
+	font-family: $h-font-alt
+	font-size: $size-h6
+	line-height: 1.231
+
+.title, a.title
+	font-size: $size-title
+	font-family: $font-bold
+	text-transform: uppercase
+	text-decoration: none
+	color: #000
+	a
+		font-size: $size-title
+		font-family: $font-bold
+		text-transform: uppercase
+		text-decoration: none
+		color: #000
+
+.title-special, a.title-special
+	margin-bottom: 10px
+	font-size: $size-h6
+	font-family: $font-bold
+	line-height: 1.2
+	text-transform: uppercase
+	color: #000
+	a
+		font-size: $size-h6
+		font-family: $font-bold
+		line-height: 1.2
+		text-transform: uppercase
+		text-decoration: none
+		color: #000
+
+.title-strong
+	margin-bottom: 10px
+	font-size: 21px
+	font-family: $font-bold
+	line-height: 1.2
+	text-transform: uppercase
+	color: #000
+	&.title-strong_lowpercase
+		text-transform: none
+a.title-strong
+	text-decoration: none
+p
+	margin-bottom: 10px
+
+.lead
+	font-weight: normal
+	font-size: $size-l
+	line-height: 1.231
+	margin-bottom: 10px
+
+b, strong
+	font-family: $font-bold
+	font-weight: normal
+
+small,
+.small
+	display: block
+	font-size: $size-s
+	line-height: 1.4
+	margin-bottom: 10px
+
+.xsmall
+	font-size: $size-xs
+	line-height: 1.3
+	margin-bottom: 10px
+
+$hr-border: #d7d7d7
+hr, .hr
+	border: 0
+	border-top: 1px solid $hr-border
+	margin: 20px 0
+blockquote,
+.blockquote
+	padding: 10px 0 10px 25px
+	border-left: 7px solid $yellow
+	margin-bottom: 10px
+	margin-left: 10px
+	p
+		font-weight: normal
+		font-size: $size-l
+		line-height: 1.231
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+
+
+// Grid
+// --------------------------------------------------
+%in
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+.container
+	@extend %in
+
+.wrap
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+
+.l
+	+clr
+	.l-sidebar
+		width: 250px
+		float: left
+		margin-right: $mr-base
+	.l-main
+		width: 670px
+		float: left
+		margin-top: 30px
+	.l-col1
+		width: 380px
+		float: left
+	.l-col2
+		width: 250px
+		margin-left: $mr-base
+		float: left

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for Contact Form</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label_fieldset">Contact Form</label>
+
+			<label index="name">Контактное лицо</label>
+			<label index="name_placeholder">Ф.И.О.</label>
+			<label index="email">Электронная почта</label>
+			<label index="email_placeholder">name@domain.ru</label>
+			<label index="phone">Телефон</label>
+			<label index="phone_placeholder">+7 (000) 000-00-00</label>
+			<label index="message">Сообщение</label>
+			<label index="message_placeholder">Сообщение</label>
+			<label index="submit">Отправить</label>
+
+			<label index="error_name_required">Это обязательное поле</label>
+			<label index="error_name_maxLength">Максимальная длина ###value### символов</label>
+
+			<label index="error_phone_required">Это обязательное поле</label>
+			<label index="error_phone_maxLength">Максимальная длина ###value### символов</label>
+
+			<label index="error_email_required">Это обязательное поле</label>
+			<label index="error_email_email">Проверьте, пожалуйста, правильность электронного адреса</label>
+			<label index="error_email_maxLength">Максимальная длина ###value### символов</label>
+
+			<label index="error_message_required">Это обязательное поле</label>
+			<label index="error_message_maxLength">Максимальная длина сообщения ###value### символов</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

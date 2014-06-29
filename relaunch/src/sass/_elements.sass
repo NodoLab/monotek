@@ -1,4 +1,4 @@
-// 
+//
 // --------------------------------------------------
 
 // Fonts
@@ -45,6 +45,8 @@ $size-base: $size-m
 $size-h1: 32px
 $size-h2: 28px
 $size-h3: 24px
+$size-h4: 20px
+$size-h5: 18px
 $size-h6: 18px
 $size-title: 16px
 
@@ -56,57 +58,81 @@ $h-color: #000
 h1, .h1,
 h2, .h2,
 h3, .h3,
+h4, .h4,
+h5, .h5,
 h6, .h6
+	font-family: $h-font
 	font-weight: $h-font-weight
 	color: $h-color
-
-h1, .h1,
-h2, .h2,
-h3, .h3
-	font-family: $h-font
 	line-height: 1
-
-h2, .h2,
-h3, .h3,
-h6, .h6
-	margin-bottom: 18px
 
 h1, .h1
 	font-size: $size-h1
+	line-height: 32px
+	margin-top: 16px
 	margin-bottom: 20px
+
 h2, .h2
 	font-size: $size-h2
+	line-height: 28px
+	margin-top: 14px
+	margin-bottom: 18px
+
 h3, .h3
 	font-size: $size-h3
+	line-height: 24px
+	margin-top: 12px
+	margin-bottom: 16px
+
+h4, .h4
+	font-size: $size-h4
+	line-height: 22px
+	margin-top: 10px
+	margin-bottom: 14px
+
+h5, .h5
+	font-size: $size-h5
+	line-height: 20px
+	margin-top: 10px
+	margin-bottom: 12px
+
 h6, .h6
 	font-family: $h-font-alt
 	font-size: $size-h6
-	line-height: 1.231
-	
+	line-height: 20px
+	margin-top: 8px
+	margin-bottom: 10px
+
+a
+	color: $gray-dark
+	text-decoration: underline
+	&:hover
+		color: lighten($gray-dark, 20)
+
 .title, a.title
 	font-size: $size-title
-	font-family: $font-bold 
+	font-family: $font-bold
 	text-transform: uppercase
 	text-decoration: none
 	color: #000
 	a
 		font-size: $size-title
-		font-family: $font-bold 
+		font-family: $font-bold
 		text-transform: uppercase
 		text-decoration: none
 		color: #000
-	
+
 .title-special, a.title-special
 	margin-bottom: 10px
 	font-size: $size-h6
 	font-family: $font-bold
-	line-height: 1.2 
+	line-height: 1.2
 	text-transform: uppercase
 	color: #000
 	a
 		font-size: $size-h6
 		font-family: $font-bold
-		line-height: 1.2 
+		line-height: 1.2
 		text-transform: uppercase
 		text-decoration: none
 		color: #000
@@ -115,7 +141,7 @@ h6, .h6
 	margin-bottom: 10px
 	font-size: 21px
 	font-family: $font-bold
-	line-height: 1.2 
+	line-height: 1.2
 	text-transform: uppercase
 	color: #000
 	&.title-strong_lowpercase
@@ -167,115 +193,6 @@ blockquote,
 			margin-bottom: 0
 
 
-// Buttons
-// --------------------------------------------------
-.btn
-	height: 31px
-	line-height: 31px
-	padding-right: 31px
-	padding-left: 18px
-	background: $yellow
-	+border-radius($radius)
-	display: inline-block
-	+ie-inline
-	font-size: 16px
-	text-transform: uppercase
-	font-family: $font-bold
-	color: #000
-	text-decoration: none
-	position: relative
-	&:after
-		content: ""
-		position: absolute
-		top: 11px
-		right: 16px
-		+s(i-arr)
-	&:hover
-		background: #FFED52
-	&:active
-		+box-shadow(inset 0px 1px 0 #e8d84b)
-		line-height: 32px
-		&:after
-			top: 12px
-	&.btn_small
-		height: 27px
-		line-height: 27px
-		padding-right: 20px
-		padding-left: 10px
-		font-size: $size-s
-		&:after
-			top: 9px
-			right: 10px
-		&:active
-			line-height: 28px
-			&:after
-				top: 10px
-	&.btn_map
-		padding-left: 35px
-		padding-right: 25px
-		&:after
-			+s(i-map)
-			left: 15px
-			right: auto
-			top: 7px 
-	&.btn_call
-		padding-left: 35px
-		padding-right: 22px
-		&:after
-			+s(i-headphone)
-			left: 16px
-			right: auto
-			top: 9px 
-	&.btn_forus
-		margin-top: 8px
-	&.btn_calc
-		padding-left: 18px
-		padding-right: 18px
-		display: block
-		&:after
-			right: 32px
-.btn-muted
-	height: 27px
-	line-height: 27px
-	padding-right: 19px
-	padding-left: 9px
-	display: inline-block
-	+ie-inline
-	background: transparent
-	border: 1px solid #a1a1a1
-	+border-radius($radius)
-	font-size: $size-s
-	text-transform: uppercase
-	font-family: $font-bold
-	color: #000
-	text-decoration: none
-	position: relative
-	&:after
-		content: ""
-		position: absolute
-		top: 9px
-		right: 10px
-		+s(i-arr)
-	&:hover
-		background: #F6F6F6
-	&:active
-		line-height: 28px
-		+box-shadow(inset 0px 1px 0 #dddddd)
-		&:after
-			top: 10px
-	&.btn-muted_mod
-		height: 24px
-		line-height: 24px
-		border-color: $gray-dark
-		&:after
-			top: 8px
-		&:hover
-			background: #FFED52
-		&:active
-			line-height: 26px
-			+box-shadow(inset 0px 1px 0 #ccbe42)
-			&:after
-				top: 9px
 // Grid
 // --------------------------------------------------
 %in
@@ -307,3 +224,22 @@ blockquote,
 		width: 250px
 		margin-left: $mr-base
 		float: left
+
+	.l-col50
+		width: (670px - $mr-base) / 2
+		margin-left: $mr-base
+		float: left
+	.l-col50:first-child
+		margin-left: 0
+		float: left
+
+	.l-col3
+		float: left
+		width: (670px - $mr-base) / 3
+		margin-left: $mr-base / 2
+	.l-col3:first-child
+		margin-left: 0
+
+	&.l-content
+		margin-bottom: 20px
+

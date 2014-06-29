@@ -8,7 +8,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 <body>
-<div class="out"> 
+<div class="out">
 	<div class="header header_contact">
 		<div class="header__map">
 			<div id="map"></div>
@@ -110,14 +110,15 @@
 							</div>
 						</div>
 					</div>
+					<h2>Отправьте нам сообщение прямо сейчас</h2>
 					<div class="form">
-						<h2 class="h2">Отправьте нам сообщение прямо сейчас</h2>
 						<div class="form__row form__row_noborder">
 							<div class="form__left">
 								<span>Имя</span>
 							</div>
 							<div class="form__right">
 								<input type="text" class="input">
+								<div class="form__error">Это обязательное поле</div>
 							</div>
 						</div>
 						<div class="form__row">
@@ -126,6 +127,7 @@
 							</div>
 							<div class="form__right">
 								<input type="text" class="input">
+								<div class="form__error">Это обязательное поле</div>
 							</div>
 						</div>
 						<div class="form__row">
@@ -134,19 +136,21 @@
 							</div>
 							<div class="form__right">
 								<input type="text" class="input">
+								<div class="form__error">Это обязательное поле</div>
 							</div>
 						</div>
 						<div class="form__row form__row_mod">
 							<div class="form__left">
 								<span>Сообщение</span>
 							</div>
-							<div class="form__right">
+							<div class="form__right form__right_textarea">
 								<textarea class="textarea"></textarea>
+								<div class="form__error">Это обязательное поле</div>
 							</div>
 						</div>
 						<div class="form__row form__row_mod">
 							<div class="form__left"></div>
-							<div class="form__right"><a href="#" class="btn">отправить</a></div>
+							<div class="form__right"><a href="#" class="btn js-sendError">отправить</a></div>
 						</div>
 					</div>
 	 			</div>

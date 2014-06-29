@@ -25,6 +25,7 @@ $(function(){
 
 	var mapOptions = {
 		center: new google.maps.LatLng(defaultLat, defaultLng),
+		scrollwheel: false,
 		zoom: 16
 	};
 

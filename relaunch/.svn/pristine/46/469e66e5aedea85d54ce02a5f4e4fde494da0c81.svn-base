@@ -1,0 +1,9 @@
+<!-- ###TEMPLATE_FORM1### -->
+###master_multipart-form-start_contact-form###
+	###master_firstinput_name###
+	###master_input_phone###
+	###master_input_email###
+	###master_textarea_message###
+	###master_submit###
+###master_form-end###
+<!-- ###TEMPLATE_FORM1### -->

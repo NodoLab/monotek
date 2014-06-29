@@ -61,7 +61,21 @@ p + table
 .page-title
 	+clr
 	.page-title__back
+		padding-left: 35px
+		padding-right: 15px
 		float: right
+		&:after
+			content: none
+		&:before
+			content: ""
+			+s(i-cross)
+			position: absolute
+			top: 50%
+			margin-top: -6px
+			left: 15px
+		&:active
+			&:before
+				margin-top: -5px
 
 // Breadcrumbs
 // --------------------------------------------------
