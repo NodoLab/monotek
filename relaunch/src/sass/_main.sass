@@ -326,3 +326,26 @@
 #map
 	height: 428px
 
+ol
+	margin-left: 30px
+	margin-bottom: 25px
+	list-style-type: decimal
+	li
+		margin-bottom: 12px
+
+ul.list
+	margin-bottom: 25px
+	li
+		margin-bottom: 12px
+		padding-left: 30px
+		position: relative
+		&:before
+			content: ""
+			width: 7px
+			height: 7px
+			background: #ffed52
+			+border-radius(50%)
+			position: absolute
+			top: 7px
+			left: 13px
+
